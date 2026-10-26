@@ -32,7 +32,7 @@ internal class DesignWindowHelper
         window.ExtendsContentIntoTitleBar = true;
         window.AppWindow.Closing += AppWindow_Closing;
         window.Content = new DesignEditor(design, designName);
-        window.Title = "Edit Design " + designName;
+        window.Title = "编辑设计 " + designName;
 
         window.Activate();
 

@@ -99,7 +99,7 @@ public static class TabPageHelper
         if (!tab.DataIsLoaded && tab != null)
         {
             progressWindow?.ShowProgress();
-            progressWindow?.SetText("Loading file " + tab.DatabaseItem.FileName + "...");
+            progressWindow?.SetText("正在加载文件 " + tab.DatabaseItem.FileName + "...");
             
             tab.textbox.LoadLines(TabDatabase.ReadTempFile(tab), true, tab.LineEnding);
             tab.SetTabsSpaces(tab.DatabaseItem.TabsSpaces);
@@ -233,7 +233,7 @@ public static class TabPageHelper
                 if (!tab.DataIsLoaded)
                     continue;
 
-                progressWindow?.SetText("Saving database " + tab.DatabaseItem.FileName + "...");
+                progressWindow?.SetText("正在保存数据库 " + tab.DatabaseItem.FileName + "...");
                 if (!TabDatabase.SaveTempFile(tab))
                     anyFailed = true;
                 else

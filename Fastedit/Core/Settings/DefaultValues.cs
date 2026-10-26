@@ -7,7 +7,7 @@ namespace Fastedit.Core.Settings
 {
     public class DefaultValues
     {
-        public static string NewTabTitle = "Untitled";
+        public static string NewTabTitle = "无标题";
         public static string NewTabExtension = ".txt";
         public static Encoding Encoding = new UTF8Encoding(false);
         public static bool FastLoadTabs = true;

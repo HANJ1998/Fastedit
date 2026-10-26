@@ -29,7 +29,7 @@ namespace Fastedit.Storage
             new ExtensionItem()
             {
                 Extension = { ".gcode", ".ngc", ".tap" },
-                ExtensionName = "G-Code",
+                ExtensionName = "G 代码",
                 ExtensionLongName = "G-Code"
             },
             new ExtensionItem()
@@ -40,17 +40,17 @@ namespace Fastedit.Storage
             new ExtensionItem()
             {
                 Extension = { ".ino" },
-                ExtensionName = "Arduino sketch",
+                ExtensionName = "Arduino 项目",
             },
             new ExtensionItem()
             {
                 Extension = { ".php" },
-                ExtensionName = "Hypertext preprocessor",
+                ExtensionName = "PHP 文件",
             },
             new ExtensionItem()
             {
                 Extension = { ".asm" },
-                ExtensionName = "Assembly language",
+                ExtensionName = "汇编文件",
             },
             new ExtensionItem()
             {
@@ -100,19 +100,19 @@ namespace Fastedit.Storage
             new ExtensionItem()
             {
                 Extension = { ".txt", ".log" },
-                ExtensionName = "Textfile",
+                ExtensionName = "文本文件",
                 ExtensionLongName = "Textfile"
             },
             new ExtensionItem()
             {
                 Extension = { ".reg" },
-                ExtensionName = "Registration file",
+                ExtensionName = "注册表文件",
                 ExtensionLongName = "Windows Registration file"
             },
             new ExtensionItem()
             {
                 Extension = { ".css" },
-                ExtensionName = "Cascading Style Sheets",
+                ExtensionName = "CSS 样式表",
                 ExtensionLongName = "Cascading Style Sheets"
             },
             new ExtensionItem()
@@ -124,7 +124,7 @@ namespace Fastedit.Storage
             new ExtensionItem()
             {
                 Extension = { ".ini", ".config", ".inf" },
-                ExtensionName = "Configuration file",
+                ExtensionName = "配置文件",
                 ExtensionLongName = "Configuration file"
             },
             new ExtensionItem()

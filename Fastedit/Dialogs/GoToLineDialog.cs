@@ -27,10 +27,10 @@ internal class GoToLineDialog
             Background = DialogHelper.ContentDialogBackground(),
             Foreground = DialogHelper.ContentDialogForeground(),
             RequestedTheme = DialogHelper.DialogDesign,
-            Title = "Go To Line",
+            Title = "转到行",
             Content = input,
-            PrimaryButtonText = "Ok",
-            CloseButtonText = "Cancel",
+            PrimaryButtonText = "确定",
+            CloseButtonText = "取消",
             DefaultButton = ContentDialogButton.Primary,
             XamlRoot = App.m_window.Content.XamlRoot
         };

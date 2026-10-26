@@ -16,12 +16,12 @@ public sealed partial class SettingsPage : Page
 
     private readonly List<(string Tag, Type Page, string HeaderContent)> _pages = new List<(string Tag, Type Page, string HeaderContent)>
     {
-        ("AppPage", typeof(Settings_AppPage), "App"),
-        ("TextboxPage", typeof(Settings_DocumentPage), "Textbox"),
-        ("TabviewPage", typeof(Settings_TabControl), "Tabs"),
-        ("DesignPage", typeof(Settings_DesignPage), "Designs"),
-        ("DataPage", typeof(Settings_Data), "Data"),
-        ("AboutPage", typeof(AboutPage), "About"),
+        ("AppPage", typeof(Settings_AppPage), "应用"),
+        ("TextboxPage", typeof(Settings_DocumentPage), "文本框"),
+        ("TabviewPage", typeof(Settings_TabControl), "标签页"),
+        ("DesignPage", typeof(Settings_DesignPage), "设计"),
+        ("DataPage", typeof(Settings_Data), "数据"),
+        ("AboutPage", typeof(AboutPage), "关于"),
     };
 
     public SettingsPage(SettingsNavigationParameter param)

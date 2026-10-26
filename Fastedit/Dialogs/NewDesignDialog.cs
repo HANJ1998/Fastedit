@@ -18,10 +18,10 @@ internal class NewDesignDialog
             Background = DialogHelper.ContentDialogBackground(),
             Foreground = DialogHelper.ContentDialogForeground(),
             RequestedTheme = DialogHelper.DialogDesign,
-            Title = "New Design",
+            Title = "新建设计",
             Content = designName_Textbox,
-            PrimaryButtonText = "Done",
-            CloseButtonText = "Cancel",
+            PrimaryButtonText = "完成",
+            CloseButtonText = "取消",
             DefaultButton = ContentDialogButton.Primary,
             XamlRoot = App.m_window.Content.XamlRoot
         };

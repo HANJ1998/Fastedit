@@ -1,26 +1,26 @@
 ﻿#Version 2.11.0 [22.10.2026]
-• Added word wrap
-• Added log file syntax highlighting 
-• Added generic highlighting with default settings
-• Added default setting for word wrap
-• Added smooth scrolling setting and smoother touchpad gestures
-• Added file content change watcher to notify when a file is modified externally
-• Added support for ANSI and UTF-32 encodings (preserved umlauts in ANSI files)
-• Added setting to open unknown file types with generic syntax highlighting
-• Added reset zoom action and updated zoom shortcuts
-• Added undo/redo for entire words and horizontal scroll virtualization
-• Added full touch and pen support
-• Added graceful handling for corrupted tab databases
-• Improved performance: significantly faster with less RAM usage
-• Reopening with encoding preserves line endings
-• Changing encoding now marks the tab as modified
-• Auto save only backs up tabs with actual changes
-• Failed 'Save As' no longer marks document as saved
-• Fixed crash when handling UTF-32 files
-• Fixed crash issues and memory leaks
-• Fixed Asian characters and emojis
-• Fixed tab key behavior after converting between tabs and spaces
-• Fixed window placement and center on first start
+• 新增自动换行功能
+• 新增日志文件语法高亮 
+• 新增通用语法高亮，并提供默认设置
+• 新增自动换行的默认设置
+• 新增平滑滚动设置，触控板手势更加顺滑
+• 新增文件内容变化监视，文件被外部修改时发出通知
+• 新增对 ANSI 与 UTF-32 编码的支持（保留 ANSI 文件中的变音字符）
+• 新增设置：未知文件类型也可使用通用语法高亮打开
+• 新增重置缩放操作，并更新了缩放快捷键
+• 新增整词撤销/重做与水平滚动虚拟化
+• 新增完整的触摸与手写笔支持
+• 新增对损坏的标签页数据库的妥善处理
+• 性能改进：速度显著提升，内存占用更低
+• 以指定编码重新打开时保留行尾符
+• 更改编码现在会将标签页标记为已修改
+• 自动保存仅备份有实际更改的标签页
+• "另存为"失败时不再将文档标记为已保存
+• 修复处理 UTF-32 文件时的崩溃
+• 修复崩溃问题与内存泄漏
+• 修复亚洲字符与表情符号的显示问题
+• 修复在制表符与空格相互转换后 Tab 键的行为
+• 修复窗口位置及首次启动时居中的问题
 
 #Version 2.10.1 [02.02.2026]
 	• Fixed crash when clicking in line number view

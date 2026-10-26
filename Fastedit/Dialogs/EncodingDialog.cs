@@ -21,7 +21,7 @@ public class EncodingDialog
         {
             encodingCombobox = new ComboBox
             {
-                Header = "Encoding:",
+                Header = "编码：",
                 HorizontalAlignment = Microsoft.UI.Xaml.HorizontalAlignment.Center,
                 VerticalAlignment = Microsoft.UI.Xaml.VerticalAlignment.Center,
                 Width=200,
@@ -37,9 +37,9 @@ public class EncodingDialog
             RequestedTheme = DialogHelper.DialogDesign,
             Title = "Encoding",
             Content = encodingCombobox,
-            PrimaryButtonText = "Done",
-            SecondaryButtonText = tab.DatabaseItem.WasNeverSaved ? "" : "Reopen",
-            CloseButtonText = "Cancel",
+            PrimaryButtonText = "完成",
+            SecondaryButtonText = tab.DatabaseItem.WasNeverSaved ? "" : "重新打开",
+            CloseButtonText = "取消",
             DefaultButton = ContentDialogButton.Primary,
             XamlRoot = App.m_window.Content.XamlRoot
         };

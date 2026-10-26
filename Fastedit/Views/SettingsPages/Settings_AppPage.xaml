@@ -11,26 +11,26 @@
 
     <Grid>
         <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-            <controls:SetingsItemSeparator x:Uid="Settings_App_MenubarHeader" Header="Menubar"/>
-            <controls:SettingsControl x:Uid="Settings_App_ShowMenubarHeader" Header="Show Menubar">
+            <controls:SetingsItemSeparator x:Uid="Settings_App_MenubarHeader" Header="菜单栏"/>
+            <controls:SettingsControl x:Uid="Settings_App_ShowMenubarHeader" Header="显示菜单栏">
                 <controls:SettingsControl.Content>
                     <ToggleSwitch x:Name="ShowMenubarToggleSwitch" Style="{StaticResource LeftSideToggleSwitch}" Toggled="ShowMenubar_Toggled"/>
                 </controls:SettingsControl.Content>
             </controls:SettingsControl>
 
-            <controls:SettingsControl x:Uid="Settings_App_MenubarAlignmentHeader" Header="Menubar Alignment">
+            <controls:SettingsControl x:Uid="Settings_App_MenubarAlignmentHeader" Header="菜单栏对齐方式">
                 <controls:SettingsControl.Content>
                     <ComboBox Width="200" x:Name="menubarAlignmentCombobox" SelectionChanged="menubarAlignmentCombobox_SelectionChanged">
-                        <ComboBoxItem x:Uid="Settings_App_AlignmentLeft" Content="Left" Tag="0"/>
-                        <ComboBoxItem x:Uid="Settings_App_AlignmentCenter" Content="Center" Tag="1"/>
-                        <ComboBoxItem x:Uid="Settings_App_AlignmentRight" Content="Right" Tag="2"/>
+                        <ComboBoxItem x:Uid="Settings_App_AlignmentLeft" Content="左对齐" Tag="0"/>
+                        <ComboBoxItem x:Uid="Settings_App_AlignmentCenter" Content="居中" Tag="1"/>
+                        <ComboBoxItem x:Uid="Settings_App_AlignmentRight" Content="右对齐" Tag="2"/>
                     </ComboBox>
                 </controls:SettingsControl.Content>
             </controls:SettingsControl>
 
-            <controls:SetingsItemSeparator x:Uid="Settings_App_StatusbarHeader" Header="Statusbar"/>
+            <controls:SetingsItemSeparator x:Uid="Settings_App_StatusbarHeader" Header="状态栏"/>
 
-            <controls:SettingsControl x:Uid="Settings_App_ShowStatusbarHeader" Header="Show Statusbar">
+            <controls:SettingsControl x:Uid="Settings_App_ShowStatusbarHeader" Header="显示状态栏">
                 <controls:SettingsControl.Content>
                     <ToggleSwitch x:Name="ShowStatusbarToggleSwitch" Style="{StaticResource LeftSideToggleSwitch}" Toggled="ShowStatusbar_Toggled"/>
                 </controls:SettingsControl.Content>
@@ -38,7 +38,7 @@
             <Expander HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0,5,0,0">
                 <Expander.Header>
                     <Grid Height="70">
-                        <TextBlock x:Uid="Settings_App_StatusbarText" Margin="10,0,0,0" Text="Statusbar" x:Name="textDisplay" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                        <TextBlock x:Uid="Settings_App_StatusbarText" Margin="10,0,0,0" Text="状态栏" x:Name="textDisplay" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left"/>
                     </Grid>
                 </Expander.Header>
                 <Expander.Content>
@@ -58,35 +58,35 @@
                             <ColumnDefinition Width="auto"/>
                         </Grid.ColumnDefinitions>
 
-                        <TextBlock x:Uid="Settings_App_FileNameText" FontSize="16" Text="File Name" Grid.Row="0" Grid.Column="0"/>
+                        <TextBlock x:Uid="Settings_App_FileNameText" FontSize="16" Text="文件名" Grid.Row="0" Grid.Column="0"/>
                         <ToggleSwitch x:Name="showFileItem" Tag="0" Grid.Row="0" Grid.Column="1" Toggled="Statusbar_ShowItem_Toggled" Style="{StaticResource LeftSideToggleSwitch}"/>
 
-                        <TextBlock x:Uid="Settings_App_ZoomText" FontSize="16" Text="Zoom" Grid.Row="1" Grid.Column="0"/>
+                        <TextBlock x:Uid="Settings_App_ZoomText" FontSize="16" Text="缩放" Grid.Row="1" Grid.Column="0"/>
                         <ToggleSwitch x:Name="showZoomItem" Tag="1" Grid.Row="1" Grid.Column="1" Toggled="Statusbar_ShowItem_Toggled" Style="{StaticResource LeftSideToggleSwitch}"/>
 
-                        <TextBlock x:Uid="Settings_App_LineColumnText" FontSize="16" Text="Line Number / Column" Grid.Row="2" Grid.Column="0"/>
+                        <TextBlock x:Uid="Settings_App_LineColumnText" FontSize="16" Text="行号 / 列号" Grid.Row="2" Grid.Column="0"/>
                         <ToggleSwitch x:Name="showLineColumnItem" Tag="2" Grid.Row="2" Grid.Column="1" Toggled="Statusbar_ShowItem_Toggled" Style="{StaticResource LeftSideToggleSwitch}"/>
 
-                        <TextBlock x:Uid="Settings_App_WordCharsText" FontSize="16" Text="Words / Characters" Grid.Row="3" Grid.Column="0"/>
+                        <TextBlock x:Uid="Settings_App_WordCharsText" FontSize="16" Text="单词数 / 字符数" Grid.Row="3" Grid.Column="0"/>
                         <ToggleSwitch x:Name="showWordChars" Tag="3" Grid.Row="3" Grid.Column="1" Toggled="Statusbar_ShowItem_Toggled" Style="{StaticResource LeftSideToggleSwitch}"/>
 
-                        <TextBlock x:Uid="Settings_App_EncodingText" FontSize="16" Text="Encoding" Grid.Row="4" Grid.Column="0"/>
+                        <TextBlock x:Uid="Settings_App_EncodingText" FontSize="16" Text="编码" Grid.Row="4" Grid.Column="0"/>
                         <ToggleSwitch x:Name="showEncodingItem" Tag="4" Grid.Row="4" Grid.Column="1" Toggled="Statusbar_ShowItem_Toggled" Style="{StaticResource LeftSideToggleSwitch}"/>
 
-                        <TextBlock x:Uid="Settings_App_LineEndingsText" FontSize="16" Text="Line Endings" Grid.Row="5" Grid.Column="0"/>
+                        <TextBlock x:Uid="Settings_App_LineEndingsText" FontSize="16" Text="行尾符" Grid.Row="5" Grid.Column="0"/>
                         <ToggleSwitch x:Name="showLineEndings" Tag="5" Grid.Row="5" Grid.Column="1" Toggled="Statusbar_ShowItem_Toggled" Style="{StaticResource LeftSideToggleSwitch}"/>
 
-                        <TextBlock x:Uid="Settings_App_TabsSpacesText" FontSize="16" Text="Tab Spaces" Grid.Row="6" Grid.Column="0"/>
+                        <TextBlock x:Uid="Settings_App_TabsSpacesText" FontSize="16" Text="制表符空格数" Grid.Row="6" Grid.Column="0"/>
                         <ToggleSwitch x:Name="showTabsSpaces" Tag="5" Grid.Row="6" Grid.Column="1" Toggled="Statusbar_ShowItem_Toggled" Style="{StaticResource LeftSideToggleSwitch}"/>
 
-                        <TextBlock x:Uid="Settings_App_TabsSpacesText" FontSize="16" Text="Syntax Highlighting" Grid.Row="7" Grid.Column="0"/>
+                        <TextBlock x:Uid="Settings_App_TabsSpacesText" FontSize="16" Text="语法高亮" Grid.Row="7" Grid.Column="0"/>
                         <ToggleSwitch x:Name="showSyntaxhighlights" Tag="5" Grid.Row="7" Grid.Column="1" Toggled="Statusbar_ShowItem_Toggled" Style="{StaticResource LeftSideToggleSwitch}"/>
                     </Grid>
                 </Expander.Content>
             </Expander>
 
-            <controls:SetingsItemSeparator x:Uid="Settings_App_WindowHeader" Header="Window"/>
-            <controls:SettingsControl x:Uid="Settings_App_HideTitleBarHeader" Header="Hide Title Bar" InfoText="Restart to fix rendering issues">
+            <controls:SetingsItemSeparator x:Uid="Settings_App_WindowHeader" Header="窗口"/>
+            <controls:SettingsControl x:Uid="Settings_App_HideTitleBarHeader" Header="隐藏标题栏" InfoText="重启以修复渲染问题">
                 <controls:SettingsControl.Content>
                     <ToggleSwitch x:Name="HideTitlebarToggle" Style="{StaticResource LeftSideToggleSwitch}" Toggled="HideTitlebar_Toggled"/>
                 </controls:SettingsControl.Content>

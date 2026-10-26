@@ -18,114 +18,114 @@
             <TextBlock x:Name="titlebarHeader" VerticalAlignment="Center" Margin="40,0,0,0" HorizontalAlignment="Left"/>
         </Grid>
         <StackPanel VerticalAlignment="Top" Margin="0,40,0,0" Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button Margin="5,0,5,0" Content="Apply" Click="ApplyDesign_Click"/>
-            <Button Click="SaveDesign_Click" Content="Save to File" Margin="5,0,5,0" Style="{ThemeResource AccentButtonStyle}"/>
+            <Button Margin="5,0,5,0" Content="应用" Click="ApplyDesign_Click"/>
+            <Button Click="SaveDesign_Click" Content="保存到文件" Margin="5,0,5,0" Style="{ThemeResource AccentButtonStyle}"/>
         </StackPanel>
         <ScrollViewer Margin="0,80,0,0" VerticalScrollMode="Enabled" VerticalScrollBarVisibility="Visible">
             <StackPanel Margin="30,30,30,30">
-                <controls:SettingsControl Header="Theme">
+                <controls:SettingsControl Header="主题">
                     <StackPanel Orientation="Horizontal">
                         <ComboBox Width="100" SelectionChanged="Theme_Changed" SelectedIndex="{x:Bind currentDesign.Theme, Converter={StaticResource EnumToIntConverter}}">
-                            <ComboBoxItem Content="System default"/>
-                            <ComboBoxItem Content="Light"/>
-                            <ComboBoxItem Content="Dark"/>
+                            <ComboBoxItem Content="跟随系统"/>
+                            <ComboBoxItem Content="浅色"/>
+                            <ComboBoxItem Content="深色"/>
                         </ComboBox>
                     </StackPanel>
                 </controls:SettingsControl>
 
-                <controls:SettingsControl Header="Background Color">
+                <controls:SettingsControl Header="背景颜色">
                     <StackPanel Orientation="Horizontal">
                         <ComboBox Width="100" SelectionChanged="BackgroundType_Changed" SelectedIndex="{x:Bind currentDesign.BackgroundType, Converter={StaticResource EnumToIntConverter}}">
-                            <ComboBoxItem Content="Acrylic"/>
-                            <ComboBoxItem Content="Solid"/>
-                            <ComboBoxItem Content="Mica"/>
+                            <ComboBoxItem Content="亚克力"/>
+                            <ComboBoxItem Content="纯色"/>
+                            <ComboBoxItem Content="云母"/>
                         </ComboBox>
                         <controls:ColorPickerButton ColorChanged="BackgroundColor_Changed" Margin="5,0,0,0" Color="{x:Bind currentDesign.BackgroundColor}"/>
                     </StackPanel>
                 </controls:SettingsControl>
 
-                <controls:SettingsControl Header="Text Color">
+                <controls:SettingsControl Header="文本颜色">
                     <controls:ColorPickerButton ColorChanged="TextColor_Changed" Color="{x:Bind currentDesign.TextColor}"/>
                 </controls:SettingsControl>
 
-                <controls:SettingsControl Header="Selection Color">
+                <controls:SettingsControl Header="选中区颜色">
                     <controls:ColorPickerButton ColorChanged="SelectionColor_Changed" Color="{x:Bind currentDesign.SelectionColor}"/>
                 </controls:SettingsControl>
 
-                <controls:SettingsControl Header="Line Number Color">
+                <controls:SettingsControl Header="行号颜色">
                     <controls:ColorPickerButton ColorChanged="LinenumberColor_Changed" Color="{x:Bind currentDesign.LineNumberColor}"/>
                 </controls:SettingsControl>
 
-                <controls:SettingsControl Header="Line Number Background Color">
+                <controls:SettingsControl Header="行号背景颜色">
                     <controls:ColorPickerButton ColorChanged="LinenumberBackgroundColor_Changed" Color="{x:Bind currentDesign.LineNumberBackground}"/>
                 </controls:SettingsControl>
 
-                <controls:SettingsControl Header="Line Highlighter Background Color">
+                <controls:SettingsControl Header="当前行高亮背景颜色">
                     <controls:ColorPickerButton ColorChanged="LinehighlighterColor_Changed" Color="{x:Bind currentDesign.LineHighlighterBackground}"/>
                 </controls:SettingsControl>
 
-                <controls:SettingsControl Header="Textbox Background Color">
+                <controls:SettingsControl Header="文本框背景颜色">
                     <StackPanel Orientation="Horizontal">
                         <ComboBox Width="100" SelectionChanged="TextboxBackgroundtype_Changed" SelectedIndex="{x:Bind currentDesign.TextboxBackgroundType, Converter={StaticResource EnumToIntConverter}}">
-                            <ComboBoxItem Content="Acrylic"/>
-                            <ComboBoxItem Content="Solid"/>
-                            <ComboBoxItem Content="None"/>
+                            <ComboBoxItem Content="亚克力"/>
+                            <ComboBoxItem Content="纯色"/>
+                            <ComboBoxItem Content="无"/>
                         </ComboBox>
                         <controls:ColorPickerButton ColorChanged="TextboxBackgroundColor_Changed" Margin="5,0,0,0" Color="{x:Bind currentDesign.TextBoxBackground}"/>
                     </StackPanel>
                 </controls:SettingsControl>
 
-                <controls:SettingsControl Header="Search Highlight Color">
+                <controls:SettingsControl Header="搜索高亮颜色">
                     <controls:ColorPickerButton ColorChanged="SearchHighlightColor_Changed" Color="{x:Bind currentDesign.SearchHighlightColor}"/>
                 </controls:SettingsControl>
 
-                <controls:SettingsControl Header="Cursor Color">
+                <controls:SettingsControl Header="光标颜色">
                     <controls:ColorPickerButton ColorChanged="CursorColor_Changed" Color="{x:Bind currentDesign.CursorColor}"/>
                 </controls:SettingsControl>
 
-                <controls:SettingsControl Header="Selected Tab Text Color">
+                <controls:SettingsControl Header="选中标签页文字颜色">
                     <controls:ColorPickerButton ColorChanged="SelectedTabTextColor_Changed" Color="{x:Bind currentDesign.SelectedTabPageHeaderTextColor}"/>
                 </controls:SettingsControl>
 
-                <controls:SettingsControl Header="Unselected Tab Text Color">
+                <controls:SettingsControl Header="未选中标签页文字颜色">
                     <controls:ColorPickerButton ColorChanged="UnselectedTabTextColor_Changed" Color="{x:Bind currentDesign.UnSelectedTabPageHeaderTextColor}"/>
                 </controls:SettingsControl>
 
-                <controls:SettingsControl Header="Selected Tab Background Color">
+                <controls:SettingsControl Header="选中标签页背景颜色">
                     <controls:ColorPickerButton ColorChanged="SelectedTabBackgroundColor_Changed" Color="{x:Bind currentDesign.SelectedTabPageHeaderBackground}"/>
                 </controls:SettingsControl>
 
-                <controls:SettingsControl Header="Unselected Tab Background Color">
+                <controls:SettingsControl Header="未选中标签页背景颜色">
                     <controls:ColorPickerButton ColorChanged="UnselectedTabBackgroundColor_Changed" Color="{x:Bind currentDesign.UnselectedTabPageHeaderBackground}"/>
                 </controls:SettingsControl>
 
-                <controls:SettingsControl Header="Statusbar Text Color">
+                <controls:SettingsControl Header="状态栏文字颜色">
                     <controls:ColorPickerButton ColorChanged="StatusbarTextColor_Changed" Color="{x:Bind currentDesign.StatusbarTextColor}"/>
                 </controls:SettingsControl>
 
-                <controls:SettingsControl Header="Statusbar Background Color">
+                <controls:SettingsControl Header="状态栏背景颜色">
                     <StackPanel Orientation="Horizontal">
                         <ComboBox Width="100" SelectionChanged="StatusbarBackgroundType_Changed" SelectedIndex="{x:Bind currentDesign.StatusbarBackgroundType, Converter={StaticResource EnumToIntConverter}}">
-                            <ComboBoxItem Content="Acrylic"/>
-                            <ComboBoxItem Content="Solid"/>
-                            <ComboBoxItem Content="None"/>
+                            <ComboBoxItem Content="亚克力"/>
+                            <ComboBoxItem Content="纯色"/>
+                            <ComboBoxItem Content="无"/>
                         </ComboBox>
                         <controls:ColorPickerButton Margin="5,0,0,0" ColorChanged="StatusbarBackgroundColor_Changed" Color="{x:Bind currentDesign.StatusbarBackgroundColor}"/>
                     </StackPanel>
                 </controls:SettingsControl>
 
-                <controls:SettingsControl Header="Dialog Background Color">
+                <controls:SettingsControl Header="对话框背景颜色">
                     <StackPanel Orientation="Horizontal">
                         <ComboBox Width="100" SelectionChanged="DialogBackgroundType_Changed" SelectedIndex="{x:Bind currentDesign.DialogBackgroundType, Converter={StaticResource EnumToIntConverter}}">
-                            <ComboBoxItem Content="Acrylic"/>
-                            <ComboBoxItem Content="Solid"/>
-                            <ComboBoxItem Content="None"/>
+                            <ComboBoxItem Content="亚克力"/>
+                            <ComboBoxItem Content="纯色"/>
+                            <ComboBoxItem Content="无"/>
                         </ComboBox>
                         <controls:ColorPickerButton Margin="5,0,0,0" ColorChanged="DialogBackgroundColor_Changed" Color="{x:Bind currentDesign.DialogBackgroundColor}"/>
                     </StackPanel>
                 </controls:SettingsControl>
 
-                <controls:SettingsControl Header="Dialog Text Color">
+                <controls:SettingsControl Header="对话框文字颜色">
                     <controls:ColorPickerButton ColorChanged="DialogTextColor_Changed" Color="{x:Bind currentDesign.DialogTextColor}"/>
                 </controls:SettingsControl>
             </StackPanel>

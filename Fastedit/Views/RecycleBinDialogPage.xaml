@@ -32,9 +32,9 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Button Grid.Column="0" HorizontalAlignment="Center" Content="Delete" Click="DeleteSelected_Click"/>
-            <Button Grid.Column="1" HorizontalAlignment="Center" Content="Open" Click="OpenSelected_Click"/>
-            <Button Grid.Column="2" HorizontalAlignment="Center" Content="Clear" Click="ClearRecycleBin_Click"/>
+            <Button Grid.Column="0" HorizontalAlignment="Center" Content="删除" Click="DeleteSelected_Click"/>
+            <Button Grid.Column="1" HorizontalAlignment="Center" Content="打开" Click="OpenSelected_Click"/>
+            <Button Grid.Column="2" HorizontalAlignment="Center" Content="清除" Click="ClearRecycleBin_Click"/>
         </Grid>
     </Grid>
 </Page>

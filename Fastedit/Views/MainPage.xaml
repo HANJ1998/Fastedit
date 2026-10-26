@@ -61,7 +61,7 @@
                                 <ContentPresenter Grid.Column="0" x:Name="LeftContentPresenter" Content="{TemplateBinding TabStripHeader}" ContentTemplate="{TemplateBinding TabStripHeaderTemplate}" />
                                 <primitives:TabViewListView Grid.Column="1" HorizontalAlignment="Stretch" x:Name="TabListView" Padding="{TemplateBinding Padding}" CanReorderItems="{TemplateBinding CanReorderTabs}" CanDragItems="{TemplateBinding CanDragTabs}" AllowDrop="{TemplateBinding AllowDropTabs}" ItemsSource="{TemplateBinding TabItemsSource}" ItemTemplate="{TemplateBinding TabItemTemplate}" ItemTemplateSelector="{TemplateBinding TabItemTemplateSelector}" />
                                 <Border Visibility="{Binding IsAddTabButtonVisible, RelativeSource={RelativeSource TemplatedParent}}" Grid.Column="2" Padding="{ThemeResource TabViewItemAddButtonContainerPadding}" VerticalAlignment="Bottom">
-                                    <SplitButton Loaded="AddButton_Loaded" VerticalAlignment="Center" FontSize="12" Click="AddTabButton_Click" Background="Transparent" BorderBrush="Transparent" BorderThickness="0" ToolTipService.ToolTip="Show all Tabs; Ctrl + M (Type to search)" Content="&#xE710;" FontFamily="Segoe MDL2 Assets" x:Name="AddButton" Command="{TemplateBinding AddTabButtonCommand}" CommandParameter="{TemplateBinding AddTabButtonCommandParameter}" HorizontalAlignment="Center" HighContrastAdjustment="None" IsTextScaleFactorEnabled="False">
+                                    <SplitButton Loaded="AddButton_Loaded" VerticalAlignment="Center" FontSize="12" Click="AddTabButton_Click" Background="Transparent" BorderBrush="Transparent" BorderThickness="0" ToolTipService.ToolTip="显示全部标签页；Ctrl + M（输入以搜索）" Content="&#xE710;" FontFamily="Segoe MDL2 Assets" x:Name="AddButton" Command="{TemplateBinding AddTabButtonCommand}" CommandParameter="{TemplateBinding AddTabButtonCommandParameter}" HorizontalAlignment="Center" HighContrastAdjustment="None" IsTextScaleFactorEnabled="False">
                                         <SplitButton.Flyout>
                                             <controls:VerticalTabsFlyoutControl x:Name="verticalTabsFlyout"/>
                                         </SplitButton.Flyout>
@@ -474,34 +474,34 @@
 
         <MenuBar x:Name="mainMenubar" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,40,0,0">
             <MenuBar.Items>
-                <MenuBarItem Title="File" >
+                <MenuBarItem Title="文件" >
                     <MenuBarItem.Items>
-                        <MenuFlyoutItem Text="New" Click="NewFile_Click">
+                        <MenuFlyoutItem Text="新建" Click="NewFile_Click">
                             <MenuFlyoutItem.KeyboardAccelerators>
                                 <KeyboardAccelerator Key="N" Modifiers="Control" IsEnabled="False"/>
                             </MenuFlyoutItem.KeyboardAccelerators>
                         </MenuFlyoutItem>
-                        <MenuFlyoutItem Text="Open" Click="OpenFile_Click">
+                        <MenuFlyoutItem Text="打开" Click="OpenFile_Click">
                             <MenuFlyoutItem.KeyboardAccelerators>
                                 <KeyboardAccelerator Key="O" Modifiers="Control" IsEnabled="False"/>
                             </MenuFlyoutItem.KeyboardAccelerators>
                         </MenuFlyoutItem>
                         <MenuFlyoutSeparator/>
-                        <MenuFlyoutItem Text="Save" Click="SaveFile_Click">
+                        <MenuFlyoutItem Text="保存" Click="SaveFile_Click">
                             <MenuFlyoutItem.KeyboardAccelerators>
                                 <KeyboardAccelerator Key="S" Modifiers="Control" IsEnabled="False"/>
                             </MenuFlyoutItem.KeyboardAccelerators>
                         </MenuFlyoutItem>
-                        <MenuFlyoutItem Text="Save As" Click="SaveFileAs_Click">
+                        <MenuFlyoutItem Text="另存为" Click="SaveFileAs_Click">
                             <MenuFlyoutItem.KeyboardAccelerators>
                                 <KeyboardAccelerator Key="S" Modifiers="Control,Shift" IsEnabled="False"/>
                             </MenuFlyoutItem.KeyboardAccelerators>
                         </MenuFlyoutItem>
-                        <MenuFlyoutItem Text="Save All" Click="SaveAll_Click"/>
+                        <MenuFlyoutItem Text="全部保存" Click="SaveAll_Click"/>
                         <MenuFlyoutSeparator/>
-                        <MenuFlyoutItem Text="Recycle Bin" Click="RecycleBin_Click"/>
+                        <MenuFlyoutItem Text="回收站" Click="RecycleBin_Click"/>
                         <MenuFlyoutSeparator/>
-                        <MenuFlyoutItem Text="Settings" Click="Settings_Click">
+                        <MenuFlyoutItem Text="设置" Click="Settings_Click">
                             <MenuFlyoutItem.KeyboardAccelerators>
                                 <KeyboardAccelerator Key="F1" IsEnabled="False" Modifiers="None"/>
                             </MenuFlyoutItem.KeyboardAccelerators>
@@ -509,157 +509,157 @@
                     </MenuBarItem.Items>
                 </MenuBarItem>
 
-            <MenuBarItem Title="Edit">
+            <MenuBarItem Title="编辑">
                     <MenuBarItem.Items>
-                        <MenuFlyoutItem Text="Undo" Click="Undo_Click">
+                        <MenuFlyoutItem Text="撤销" Click="Undo_Click">
                             <MenuFlyoutItem.KeyboardAccelerators>
                                 <KeyboardAccelerator Key="Z" Modifiers="Control" IsEnabled="False"/>
                             </MenuFlyoutItem.KeyboardAccelerators>
                         </MenuFlyoutItem>
-                        <MenuFlyoutItem Text="Redo" Click="Redo_Click">
+                        <MenuFlyoutItem Text="重做" Click="Redo_Click">
                             <MenuFlyoutItem.KeyboardAccelerators>
                                 <KeyboardAccelerator Key="Y" Modifiers="Control" IsEnabled="False"/>
                             </MenuFlyoutItem.KeyboardAccelerators>
                         </MenuFlyoutItem>
                         <MenuFlyoutSeparator/>
-                        <MenuFlyoutItem Text="Cut" Click="Cut_Click">
+                        <MenuFlyoutItem Text="剪切" Click="Cut_Click">
                             <MenuFlyoutItem.KeyboardAccelerators>
                                 <KeyboardAccelerator Key="X" Modifiers="Control" IsEnabled="False"/>
                             </MenuFlyoutItem.KeyboardAccelerators>
                         </MenuFlyoutItem>
-                        <MenuFlyoutItem Text="Copy" Click="Copy_Click">
+                        <MenuFlyoutItem Text="复制" Click="Copy_Click">
                             <MenuFlyoutItem.KeyboardAccelerators>
                                 <KeyboardAccelerator Key="C" Modifiers="Control" IsEnabled="False"/>
                             </MenuFlyoutItem.KeyboardAccelerators>
                         </MenuFlyoutItem>
-                        <MenuFlyoutItem Text="Paste" Click="Paste_Click">
+                        <MenuFlyoutItem Text="粘贴" Click="Paste_Click">
                             <MenuFlyoutItem.KeyboardAccelerators>
                                 <KeyboardAccelerator Key="V" Modifiers="Control" IsEnabled="False"/>
                             </MenuFlyoutItem.KeyboardAccelerators>
                         </MenuFlyoutItem>
-                        <MenuFlyoutItem Text="Duplicate Line" Click="DuplicateLine_Click">
+                        <MenuFlyoutItem Text="复制当前行" Click="DuplicateLine_Click">
                             <MenuFlyoutItem.KeyboardAccelerators>
                                 <KeyboardAccelerator Key="D" Modifiers="Control" IsEnabled="False"/>
                             </MenuFlyoutItem.KeyboardAccelerators>
                         </MenuFlyoutItem>
                         <MenuFlyoutSeparator/>
-                        <MenuFlyoutItem Text="Search" Click="Search_Click">
+                        <MenuFlyoutItem Text="搜索" Click="Search_Click">
                             <MenuFlyoutItem.KeyboardAccelerators>
                                 <KeyboardAccelerator Key="F" Modifiers="Control" IsEnabled="False"/>
                             </MenuFlyoutItem.KeyboardAccelerators>
                         </MenuFlyoutItem>
-                        <MenuFlyoutItem Text="Replace" Click="Replace_Click">
+                        <MenuFlyoutItem Text="替换" Click="Replace_Click">
                             <MenuFlyoutItem.KeyboardAccelerators>
                                 <KeyboardAccelerator Key="R" Modifiers="Control" IsEnabled="False"/>
                             </MenuFlyoutItem.KeyboardAccelerators>
                         </MenuFlyoutItem>
-                        <MenuFlyoutItem Text="Go To" Click="GoToLine_Click">
+                        <MenuFlyoutItem Text="转到" Click="GoToLine_Click">
                             <MenuFlyoutItem.KeyboardAccelerators>
                                 <KeyboardAccelerator Key="G" Modifiers="Control" IsEnabled="False"/>
                             </MenuFlyoutItem.KeyboardAccelerators>
                         </MenuFlyoutItem>
                         <MenuFlyoutSeparator/>
-                        <MenuFlyoutItem Text="Select All" Click="SelectAll_Click">
+                        <MenuFlyoutItem Text="全选" Click="SelectAll_Click">
                             <MenuFlyoutItem.KeyboardAccelerators>
                                 <KeyboardAccelerator Key="A" Modifiers="Control" IsEnabled="False"/>
                             </MenuFlyoutItem.KeyboardAccelerators>
                         </MenuFlyoutItem>
                     </MenuBarItem.Items>
                 </MenuBarItem>
-            <MenuBarItem Title="Document">
+            <MenuBarItem Title="文档">
                     <MenuBarItem.Items>
-                        <ToggleMenuFlyoutItem x:Name="WordWrapMenuIndicator" Text="Word wrap" Click="WordWrap_Click"/>
-                        <MenuFlyoutItem Text="File Info" Click="FileInfo_Click">
+                        <ToggleMenuFlyoutItem x:Name="WordWrapMenuIndicator" Text="自动换行" Click="WordWrap_Click"/>
+                        <MenuFlyoutItem Text="文件信息" Click="FileInfo_Click">
                             <MenuFlyoutItem.KeyboardAccelerators>
                                 <KeyboardAccelerator Key="I" Modifiers="Control" IsEnabled="False"/>
                             </MenuFlyoutItem.KeyboardAccelerators>
                         </MenuFlyoutItem>
-                        <MenuFlyoutItem Text="Rename" Click="RenameFile_Click">
+                        <MenuFlyoutItem Text="重命名" Click="RenameFile_Click">
                             <MenuFlyoutItem.KeyboardAccelerators>
                                 <KeyboardAccelerator Key="F2"/>
                             </MenuFlyoutItem.KeyboardAccelerators>
                         </MenuFlyoutItem>
-                        <MenuFlyoutItem Text="Show in File Explorer" Click="RevealTabInFileExplorer"/>
+                        <MenuFlyoutItem Text="在文件资源管理器中显示" Click="RevealTabInFileExplorer"/>
                         <MenuFlyoutSeparator/>
-                        <MenuFlyoutSubItem Text="Line Ending" x:Name="LineEndingMenubarFlyout"/>
-                        <MenuFlyoutItem Text="Encoding" Click="ChangeEncoding_Click">
+                        <MenuFlyoutSubItem Text="行尾符" x:Name="LineEndingMenubarFlyout"/>
+                        <MenuFlyoutItem Text="编码" Click="ChangeEncoding_Click">
                             <MenuFlyoutItem.KeyboardAccelerators>
                                 <KeyboardAccelerator Key="E" Modifiers="Control" IsEnabled="False"/>
                             </MenuFlyoutItem.KeyboardAccelerators>
                         </MenuFlyoutItem>
                         <MenuFlyoutSeparator/>
-                        <MenuFlyoutItem Text="Close" Click="CloseTab_Click">
+                        <MenuFlyoutItem Text="关闭" Click="CloseTab_Click">
                             <MenuFlyoutItem.KeyboardAccelerators>
                                 <KeyboardAccelerator Key="W" Modifiers="Control" IsEnabled="False"/>
                             </MenuFlyoutItem.KeyboardAccelerators>
                         </MenuFlyoutItem>
-                        <MenuFlyoutItem Text="Close All" Click="CloseAll_Click"/>
+                        <MenuFlyoutItem Text="全部关闭" Click="CloseAll_Click"/>
                         <MenuFlyoutSeparator/>
-                        <MenuFlyoutItem Text="Undock Tab" Click="UndockTab_Click">
+                        <MenuFlyoutItem Text="分离标签页" Click="UndockTab_Click">
                             <MenuFlyoutItem.KeyboardAccelerators>
                                 <KeyboardAccelerator Key="L" Modifiers="Control" IsEnabled="False"/>
                             </MenuFlyoutItem.KeyboardAccelerators>
                         </MenuFlyoutItem>
-                        <ToggleMenuFlyoutItem x:Name="textboxReadonlyMenubarItem" Text="Readonly" Click="ToggleReadonly_Click"/>
+                        <ToggleMenuFlyoutItem x:Name="textboxReadonlyMenubarItem" Text="只读" Click="ToggleReadonly_Click"/>
                         <MenuFlyoutSeparator/>
-                        <ToggleMenuFlyoutItem Text="Visualize Whitespace Characters" Click="VisualizeWhitespaceCharacters_Click" x:Name="VisualizeWhitespaceCharacters_MenuFlyoutItem"/>
+                        <ToggleMenuFlyoutItem Text="显示空白字符" Click="VisualizeWhitespaceCharacters_Click" x:Name="VisualizeWhitespaceCharacters_MenuFlyoutItem"/>
                     </MenuBarItem.Items>
                 </MenuBarItem>
-                <MenuBarItem Title="Advanced">
+                <MenuBarItem Title="高级">
                     <MenuBarItem.Items>
-                        <MenuFlyoutSubItem Text="Syntax Highlighting" x:Name="CodeLanguageSelector"/>
+                        <MenuFlyoutSubItem Text="语法高亮" x:Name="CodeLanguageSelector"/>
                         <MenuFlyoutSeparator/>
-                        <MenuFlyoutSubItem Text="Tab Behaviour (Tabs/Spaces)" x:Name="TabKeyBehaviourFlyout">
+                        <MenuFlyoutSubItem Text="Tab 行为（制表符/空格）" x:Name="TabKeyBehaviourFlyout">
                             <MenuFlyoutSubItem.Items>
-                                <MenuFlyoutItem Text="Auto Detect" Click="AutodetectTabsSpaces_Click"/>
+                                <MenuFlyoutItem Text="自动检测" Click="AutodetectTabsSpaces_Click"/>
                                 <MenuFlyoutSeparator/>
-                                <ToggleMenuFlyoutItem Text="Use Tab (\t)" Click="TabSpaces_Click" Tag="-1"/>
+                                <ToggleMenuFlyoutItem Text="使用制表符 (\t)" Click="TabSpaces_Click" Tag="-1"/>
                                 <MenuFlyoutSeparator/>
-                                <ToggleMenuFlyoutItem Text="2 Spaces" Click="TabSpaces_Click" Tag="2" />
-                                <ToggleMenuFlyoutItem Text="4 Spaces" Click="TabSpaces_Click" Tag="4"/>
-                                <ToggleMenuFlyoutItem Text="8 Spaces" Click="TabSpaces_Click" Tag="8"/>
+                                <ToggleMenuFlyoutItem Text="2 个空格" Click="TabSpaces_Click" Tag="2" />
+                                <ToggleMenuFlyoutItem Text="4 个空格" Click="TabSpaces_Click" Tag="4"/>
+                                <ToggleMenuFlyoutItem Text="8 个空格" Click="TabSpaces_Click" Tag="8"/>
                             </MenuFlyoutSubItem.Items>
                         </MenuFlyoutSubItem>
-                        <MenuFlyoutSubItem Text="Reformat Tabs/Spaces">
+                        <MenuFlyoutSubItem Text="重新格式化制表符/空格">
                             <MenuFlyoutSubItem.Items>
-                                <MenuFlyoutItem Text="Use Tab (\t)" Click="ReformatTabsInDocument_Click" Tag="-1"/>
+                                <MenuFlyoutItem Text="使用制表符 (\t)" Click="ReformatTabsInDocument_Click" Tag="-1"/>
                                 <MenuFlyoutSeparator/>
-                                <MenuFlyoutItem Text="2 Spaces" Click="ReformatTabsInDocument_Click" Tag="2"/>
-                                <MenuFlyoutItem Text="4 Spaces" Click="ReformatTabsInDocument_Click" Tag="4"/>
-                                <MenuFlyoutItem Text="8 Spaces" Click="ReformatTabsInDocument_Click" Tag="8"/>
+                                <MenuFlyoutItem Text="2 个空格" Click="ReformatTabsInDocument_Click" Tag="2"/>
+                                <MenuFlyoutItem Text="4 个空格" Click="ReformatTabsInDocument_Click" Tag="4"/>
+                                <MenuFlyoutItem Text="8 个空格" Click="ReformatTabsInDocument_Click" Tag="8"/>
                             </MenuFlyoutSubItem.Items>
                         </MenuFlyoutSubItem>
                         <MenuFlyoutSeparator/>
-                        <MenuFlyoutItem Text="Surround With" Click="SurroundWith_Click">
+                        <MenuFlyoutItem Text="包围插入" Click="SurroundWith_Click">
                             <MenuFlyoutItem.KeyboardAccelerators>
                                 <KeyboardAccelerator Key="Q" Modifiers="Control"/>
                             </MenuFlyoutItem.KeyboardAccelerators>
                         </MenuFlyoutItem>
                         <MenuFlyoutSeparator/>
-                        <MenuFlyoutItem Text="Quick Access" Click="ShowRunCommandWindow_Click">
+                        <MenuFlyoutItem Text="快速访问" Click="ShowRunCommandWindow_Click">
                             <MenuFlyoutItem.KeyboardAccelerators>
                                 <KeyboardAccelerator Key="B" Modifiers="Control" IsEnabled="False"/>
                             </MenuFlyoutItem.KeyboardAccelerators>
                         </MenuFlyoutItem>
                     </MenuBarItem.Items>
                 </MenuBarItem>
-                <MenuBarItem Title="View">
+                <MenuBarItem Title="视图">
                     <MenuBarItem.Items>
-                        <MenuFlyoutItem Text="Compact Overlay" Click="CompactOverlayMode_Click">
+                        <MenuFlyoutItem Text="迷你模式" Click="CompactOverlayMode_Click">
                             <MenuFlyoutItem.KeyboardAccelerators>
                                 <KeyboardAccelerator Key="K" Modifiers="Control" IsEnabled="False"/>
                             </MenuFlyoutItem.KeyboardAccelerators>
                         </MenuFlyoutItem>
-                        <MenuFlyoutItem Text="Fullscreen" Click="Fullscreen_Click">
+                        <MenuFlyoutItem Text="全屏" Click="Fullscreen_Click">
                             <MenuFlyoutItem.KeyboardAccelerators>
                                 <KeyboardAccelerator Key="F11" IsEnabled="False"/>
                             </MenuFlyoutItem.KeyboardAccelerators>
                         </MenuFlyoutItem>
-                        <MenuFlyoutItem Text="Always On Top" Click="Toggle_TopMost_Click"/>
+                        <MenuFlyoutItem Text="窗口置顶" Click="Toggle_TopMost_Click"/>
                         <MenuFlyoutSeparator/>
-                        <MenuFlyoutItem Text="Zoom In" Click="ZoomIn_Click" KeyboardAcceleratorTextOverride="Ctrl++"/>
-                        <MenuFlyoutItem Text="Zoom Out" Click="ZoomOut_Click" KeyboardAcceleratorTextOverride="Ctrl+-"/>
-                        <MenuFlyoutItem Text="Reset Zoom" Click="ResetZoom_Click" KeyboardAcceleratorTextOverride="Ctrl+0"/>
+                        <MenuFlyoutItem Text="放大" Click="ZoomIn_Click" KeyboardAcceleratorTextOverride="Ctrl++"/>
+                        <MenuFlyoutItem Text="缩小" Click="ZoomOut_Click" KeyboardAcceleratorTextOverride="Ctrl+-"/>
+                        <MenuFlyoutItem Text="重置缩放" Click="ResetZoom_Click" KeyboardAcceleratorTextOverride="Ctrl+0"/>
                     </MenuBarItem.Items>
                 </MenuBarItem>
             </MenuBar.Items>

@@ -9,7 +9,7 @@
     mc:Ignorable="d">
     <Grid Margin="0,30,0,0">
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Orientation="Horizontal">
-            <Button x:Uid="Settings_DesignPage_NewButton" Margin="10,0,10,0" Content="New" Click="NewDesign_Click"/>
+            <Button x:Uid="Settings_DesignPage_NewButton" Margin="10,0,10,0" Content="新建" Click="NewDesign_Click"/>
             <Button x:Uid="Settings_DesignPage_UpdateButton" Click="UpdateDesigns_Click">
                 <Button.KeyboardAccelerators>
                     <KeyboardAccelerator Key="F5" IsEnabled="True"/>
@@ -18,14 +18,14 @@
                     <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE777;"/>
                 </Button.Content>
             </Button>
-            <Button x:Uid="Settings_DesignPage_ImportButton" Margin="10,0,0,0" Content="Import" Click="ImportDesign_Click"/>
-            <Button x:Uid="Settings_DesignPage_ResetDefaultsButton" Margin="10,0,0,0" Content="Reset Defaults">
+            <Button x:Uid="Settings_DesignPage_ImportButton" Margin="10,0,0,0" Content="导入" Click="ImportDesign_Click"/>
+            <Button x:Uid="Settings_DesignPage_ResetDefaultsButton" Margin="10,0,0,0" Content="恢复默认设置">
                 <Button.Flyout>
                     <Flyout>
                         <StackPanel>
-                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" x:Uid="Settings_DesignPage_AllWillBeReplaced" Text="All existing items will be replaced. Export items to backup them!" Margin="0,0,0,12" />
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" x:Uid="Settings_DesignPage_AllWillBeReplaced" Text="所有现有项目都将被替换。请先导出项目进行备份！" Margin="0,0,0,12" />
                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                                <Button Style="{ThemeResource AccentButtonStyle}" x:Uid="Settings_DesignPage_ConfirmButton" Click="LoadDefaultDesigns_Click" Content="Confirm" />
+                                <Button Style="{ThemeResource AccentButtonStyle}" x:Uid="Settings_DesignPage_ConfirmButton" Click="LoadDefaultDesigns_Click" Content="确认" />
                             </StackPanel>
                         </StackPanel>
                     </Flyout>

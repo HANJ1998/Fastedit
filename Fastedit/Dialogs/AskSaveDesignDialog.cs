@@ -16,11 +16,11 @@ public class AskSaveDesignDialog
             Background = DialogHelper.ContentDialogBackground(),
             Foreground = DialogHelper.ContentDialogForeground(),
             RequestedTheme = DialogHelper.DialogDesign,
-            Title = "Save Design?",
-            Content = "Would you like to save the changes on " + Path.GetFileNameWithoutExtension(editor.CurrentDesignName) + "?",
-            PrimaryButtonText = "Save",
-            SecondaryButtonText = "Don't save",
-            CloseButtonText = "Cancel",
+            Title = "保存设计？",
+            Content = "是否保存对以下项目的更改：" + Path.GetFileNameWithoutExtension(editor.CurrentDesignName) + "?",
+            PrimaryButtonText = "保存",
+            SecondaryButtonText = "不保存",
+            CloseButtonText = "取消",
             DefaultButton = ContentDialogButton.Primary,
         };
         return await SaveDialog.ShowAsync();

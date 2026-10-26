@@ -16,7 +16,7 @@ internal class SettingsImportExport
     {
         var file = await SaveFileHelper.PickFile(
             ".fasteditsettings", 
-            "Fastedit settings", 
+            "Fastedit 设置", 
             "Settings_" + DateTime.Now.ToString("dd.MM.yyyy")
             );
 

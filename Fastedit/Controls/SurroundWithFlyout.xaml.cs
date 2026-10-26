@@ -41,7 +41,7 @@ namespace Fastedit.Controls
                 }
                 catch
                 {
-                    InfoMessages.UnhandledException("Internal textbox error in surround selection with");
+                    InfoMessages.UnhandledException("包围所选内容时文本框内部错误：");
                 }
 
                 this.Hide();

@@ -257,7 +257,7 @@ public static class FileChangeManager
         if (_activeReloadInfoBar == null || !_activeReloadInfoBar.IsOpen)
         {
             _activeReloadInfoBar = new InfoBar();
-            _activeReloadInfoBar.Show("File Updated", $"'{fileName}' was updated from disk.", InfoBarSeverity.Informational, 3);
+            _activeReloadInfoBar.Show("文件已更新", $"'{fileName}' was updated from disk.", InfoBarSeverity.Informational, 3);
         }
     }
 
@@ -272,11 +272,11 @@ public static class FileChangeManager
         tab.DatabaseItem.IsModified = true;
         tab.UpdateHeader();
 
-        string fileName = tab.DatabaseItem.FileName ?? "File";
+        string fileName = tab.DatabaseItem.FileName ?? "文件";
 
         var saveButton = new Button
         {
-            Content = "Save to recreate"
+            Content = "保存以重新创建"
         };
         saveButton.Click += async delegate
         {
@@ -284,7 +284,7 @@ public static class FileChangeManager
         };
 
         new InfoBar().Show(
-            "File Deleted",
+            "文件已删除",
             $"'{fileName}' was deleted on disk. Editor content is preserved. Save to recreate the file.",
             saveButton,
             InfoBarSeverity.Warning,
@@ -309,7 +309,7 @@ public static class FileChangeManager
         UpdateWatchedPath(tab, newFullPath);
 
         new InfoBar().Show(
-            "File Renamed",
+            "文件已重命名",
             $"File was renamed to '{tab.DatabaseItem.FileName}' on disk.",
             InfoBarSeverity.Informational,
             4

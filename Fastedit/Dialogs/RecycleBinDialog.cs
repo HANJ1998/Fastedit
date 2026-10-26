@@ -16,8 +16,8 @@ public class RecycleBinDialog
             Background = DialogHelper.ContentDialogBackground(),
             Foreground = DialogHelper.ContentDialogForeground(),
             RequestedTheme = DialogHelper.DialogDesign,
-            Title = "Recycle Bin",
-            CloseButtonText = "Close",
+            Title = "回收站",
+            CloseButtonText = "关闭",
             Content = new RecycleBinDialogPage(tabView),
             XamlRoot = App.m_window.Content.XamlRoot
         };

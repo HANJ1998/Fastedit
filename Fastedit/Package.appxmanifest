@@ -55,7 +55,7 @@
 			</uap5:Extension>-->
 			<uap:Extension Category="windows.fileTypeAssociation" >
 				<uap:FileTypeAssociation Name="assembly">
-					<uap:DisplayName>Assembly</uap:DisplayName>
+					<uap:DisplayName>汇编源文件</uap:DisplayName>
 					<uap:Logo>Assets\ExtensionIcons\asm\asm.png</uap:Logo>
 					<uap:EditFlags OpenIsSafe="true" />
 					<uap:SupportedFileTypes>
@@ -70,7 +70,7 @@
 						<uap:FileType>.txt</uap:FileType>
 						<uap:FileType>.log</uap:FileType>
 					</uap:SupportedFileTypes>
-					<uap:DisplayName>Text</uap:DisplayName>
+					<uap:DisplayName>文本文件</uap:DisplayName>
 					<uap:Logo>Assets\ExtensionIcons\TXT\txt.png</uap:Logo>
 					<uap:EditFlags OpenIsSafe="true"/>
 				</uap:FileTypeAssociation>
@@ -92,7 +92,7 @@
 						<uap:FileType>.c</uap:FileType>
 						<uap:FileType>.h</uap:FileType>
 					</uap:SupportedFileTypes>
-					<uap:DisplayName>GCC file</uap:DisplayName>
+					<uap:DisplayName>GCC 文件</uap:DisplayName>
 					<uap:Logo>Assets\ExtensionIcons\C\C.png</uap:Logo>
 				</uap:FileTypeAssociation>
 			</uap:Extension>
@@ -102,7 +102,7 @@
 						<uap:FileType>.cs</uap:FileType>
 					</uap:SupportedFileTypes>
 
-					<uap:DisplayName>C-Sharp</uap:DisplayName>
+					<uap:DisplayName>C# 源文件</uap:DisplayName>
 					<uap:Logo>Assets\ExtensionIcons\C-Sharp\cs.png</uap:Logo>
 				</uap:FileTypeAssociation>
 			</uap:Extension>
@@ -111,7 +111,7 @@
 					<uap:SupportedFileTypes>
 						<uap:FileType>.js</uap:FileType>
 					</uap:SupportedFileTypes>
-					<uap:DisplayName>Java Script</uap:DisplayName>
+					<uap:DisplayName>JavaScript 源文件</uap:DisplayName>
 					<uap:EditFlags OpenIsSafe="true"/>
 					<uap:Logo>Assets\ExtensionIcons\JS\js.png</uap:Logo>
 				</uap:FileTypeAssociation>
@@ -126,7 +126,7 @@
 						<uap:FileType>.pyw</uap:FileType>
 					</uap:SupportedFileTypes>
 					<uap:Logo>Assets\ExtensionIcons\Python\py.png</uap:Logo>
-					<uap:DisplayName>Python</uap:DisplayName>
+					<uap:DisplayName>Python 源文件</uap:DisplayName>
 					<uap:EditFlags OpenIsSafe="true"/>
 				</uap:FileTypeAssociation>
 			</uap:Extension>
@@ -137,7 +137,7 @@
 						<uap:FileType>.htm</uap:FileType>
 						<uap:FileType>.xhtml</uap:FileType>
 					</uap:SupportedFileTypes>
-					<uap:DisplayName>HTML</uap:DisplayName>
+					<uap:DisplayName>HTML 网页文件</uap:DisplayName>
 					<uap:EditFlags OpenIsSafe="true"/>
 					<uap:Logo>Assets\ExtensionIcons\HTML\html.png</uap:Logo>
 				</uap:FileTypeAssociation>
@@ -150,7 +150,7 @@
 						<uap:FileType>.j</uap:FileType>
 					</uap:SupportedFileTypes>
 					<uap:Logo>Assets\ExtensionIcons\Java\java.png</uap:Logo>
-					<uap:DisplayName>Java</uap:DisplayName>
+					<uap:DisplayName>Java 源文件</uap:DisplayName>
 					<uap:EditFlags OpenIsSafe="true"/>
 				</uap:FileTypeAssociation>
 			</uap:Extension>
@@ -159,7 +159,7 @@
 					<uap:SupportedFileTypes>
 						<uap:FileType>.json</uap:FileType>
 					</uap:SupportedFileTypes>
-					<uap:DisplayName>JSON</uap:DisplayName>
+					<uap:DisplayName>JSON 数据文件</uap:DisplayName>
 					<uap:Logo>Assets\ExtensionIcons\Json\json.png</uap:Logo>
 					<uap:EditFlags OpenIsSafe="true"/>
 				</uap:FileTypeAssociation>
@@ -171,7 +171,7 @@
 						<uap:FileType>.ngc</uap:FileType>
 						<uap:FileType>.tap</uap:FileType>
 					</uap:SupportedFileTypes>
-					<uap:DisplayName>G-Code</uap:DisplayName>
+					<uap:DisplayName>G 代码文件</uap:DisplayName>
 					<uap:Logo>Assets\ExtensionIcons\G-Code\gcode.png</uap:Logo>
 				</uap:FileTypeAssociation>
 			</uap:Extension>
@@ -180,7 +180,7 @@
 					<uap:SupportedFileTypes>
 						<uap:FileType>.vb</uap:FileType>
 					</uap:SupportedFileTypes>
-					<uap:DisplayName>Visual Basic</uap:DisplayName>
+					<uap:DisplayName>Visual Basic 源文件</uap:DisplayName>
 					<uap:Logo>Assets\ExtensionIcons\VB\vb.png</uap:Logo>
 				</uap:FileTypeAssociation>
 			</uap:Extension>
@@ -189,7 +189,7 @@
 					<uap:SupportedFileTypes>
 						<uap:FileType>.ino</uap:FileType>
 					</uap:SupportedFileTypes>
-					<uap:DisplayName>Arduino sketch</uap:DisplayName>
+					<uap:DisplayName>Arduino 项目文件</uap:DisplayName>
 					<uap:Logo>Assets\ExtensionIcons\Ino\ino.png</uap:Logo>
 				</uap:FileTypeAssociation>
 			</uap:Extension>
@@ -198,7 +198,7 @@
 					<uap:SupportedFileTypes>
 						<uap:FileType>.php</uap:FileType>
 					</uap:SupportedFileTypes>
-					<uap:DisplayName>PHP</uap:DisplayName>
+					<uap:DisplayName>PHP 源文件</uap:DisplayName>
 					<uap:Logo>Assets\ExtensionIcons\PHP\php.png</uap:Logo>
 				</uap:FileTypeAssociation>
 			</uap:Extension>
@@ -207,7 +207,7 @@
 					<uap:SupportedFileTypes>
 						<uap:FileType>.kt</uap:FileType>
 					</uap:SupportedFileTypes>
-					<uap:DisplayName>Kotlin</uap:DisplayName>
+					<uap:DisplayName>Kotlin 源文件</uap:DisplayName>
 					<uap:Logo>Assets\ExtensionIcons\Kotlin\KT.png</uap:Logo>
 				</uap:FileTypeAssociation>
 			</uap:Extension>
@@ -229,7 +229,7 @@
 					<uap:SupportedFileTypes>
 						<uap:FileType>.xml</uap:FileType>
 					</uap:SupportedFileTypes>
-					<uap:DisplayName>XML</uap:DisplayName>
+					<uap:DisplayName>XML 数据文件</uap:DisplayName>
 					<uap:EditFlags OpenIsSafe="true"/>
 					<uap:Logo>Assets\ExtensionIcons\xml\xml.png</uap:Logo>
 				</uap:FileTypeAssociation>
@@ -239,7 +239,7 @@
 					<uap:SupportedFileTypes>
 						<uap:FileType>.css</uap:FileType>
 					</uap:SupportedFileTypes>
-					<uap:DisplayName>Cascading Style Sheets</uap:DisplayName>
+					<uap:DisplayName>CSS 样式表文件</uap:DisplayName>
 					<uap:Logo>Assets\ExtensionIcons\CSS\css.png</uap:Logo>
 					<uap:EditFlags OpenIsSafe="true"/>
 				</uap:FileTypeAssociation>
@@ -249,7 +249,7 @@
 					<uap:SupportedFileTypes>
 						<uap:FileType>.ini</uap:FileType>
 					</uap:SupportedFileTypes>
-					<uap:DisplayName>INI</uap:DisplayName>
+					<uap:DisplayName>INI 配置文件</uap:DisplayName>
 					<uap:Logo>Assets\ExtensionIcons\ini\ini.png</uap:Logo>
 				</uap:FileTypeAssociation>
 			</uap:Extension>
@@ -261,7 +261,7 @@
 					</uap:SupportedFileTypes>
 					<uap:EditFlags OpenIsSafe="true"/>
 					<uap:Logo>Assets\ExtensionIcons\Config\Config.png</uap:Logo>
-					<uap:DisplayName>Config</uap:DisplayName>
+					<uap:DisplayName>配置文件</uap:DisplayName>
 				</uap:FileTypeAssociation>
 			</uap:Extension>
 			<uap:Extension Category="windows.fileTypeAssociation">
@@ -272,7 +272,7 @@
 						<uap:FileType>.mdown</uap:FileType>
 						<uap:FileType>.markdn</uap:FileType>
 					</uap:SupportedFileTypes>
-					<uap:DisplayName>Markdown</uap:DisplayName>
+					<uap:DisplayName>Markdown 文档</uap:DisplayName>
 					<uap:Logo>Assets\ExtensionIcons\Markdown\MD.png</uap:Logo>
 				</uap:FileTypeAssociation>
 			</uap:Extension>
@@ -281,7 +281,7 @@
 					<uap:SupportedFileTypes>
 						<uap:FileType>.toml</uap:FileType>
 					</uap:SupportedFileTypes>
-					<uap:DisplayName>TOML configuration file</uap:DisplayName>
+					<uap:DisplayName>TOML 配置文件</uap:DisplayName>
 					<uap:Logo>Assets\ExtensionIcons\Toml\toml.png</uap:Logo>
 					<uap:EditFlags OpenIsSafe="true"/>
 				</uap:FileTypeAssociation>
@@ -291,7 +291,7 @@
 					<uap:SupportedFileTypes>
 						<uap:FileType>.tex</uap:FileType>
 					</uap:SupportedFileTypes>
-					<uap:DisplayName>LaTeX</uap:DisplayName>
+					<uap:DisplayName>LaTeX 文档</uap:DisplayName>
 					<uap:Logo>Assets\ExtensionIcons\LaTeX\latex.png</uap:Logo>
 					<uap:EditFlags OpenIsSafe="true"/>
 				</uap:FileTypeAssociation>
@@ -301,7 +301,7 @@
 					<uap:SupportedFileTypes>
 						<uap:FileType>.csv</uap:FileType>
 					</uap:SupportedFileTypes>
-					<uap:DisplayName>Comma-separated values</uap:DisplayName>
+					<uap:DisplayName>CSV 逗号分隔值文件</uap:DisplayName>
 					<uap:Logo>Assets\ExtensionIcons\CSV\csv.png</uap:Logo>
 					<uap:EditFlags OpenIsSafe="true"/>
 				</uap:FileTypeAssociation>

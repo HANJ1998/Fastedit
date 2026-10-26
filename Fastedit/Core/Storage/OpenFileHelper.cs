@@ -106,7 +106,7 @@ public class OpenFileHelper
         catch (IOException)
         {
             if (!silent)
-                InfoMessages.UnhandledException("The file is currently locked or being used by another process.");
+                InfoMessages.UnhandledException("文件当前被锁定或正被其他进程使用。");
             return (null, null, false, false, LineEnding.CRLF);
         }
         catch (Exception ex)

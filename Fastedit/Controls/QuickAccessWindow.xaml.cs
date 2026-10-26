@@ -17,12 +17,12 @@ namespace Fastedit.Controls
         List<QuickAccessWindowCustomItem> CurrentTabPages = new List<QuickAccessWindowCustomItem>();
         QuickAccessWindowSubItem currentPage = null;
 
-        QuickAccessWindowInfoItem WordCountDisplay = new QuickAccessWindowInfoItem { Command = "Number of Words" };
-        QuickAccessWindowInfoItem CharacterCountDisplay = new QuickAccessWindowInfoItem { Command = "Number of Character" };
-        QuickAccessWindowInfoItem LineCountDisplay = new QuickAccessWindowInfoItem { Command = "Number of Lines" };
-        QuickAccessWindowInfoItem EncodingDisplay = new QuickAccessWindowInfoItem { Command = "Current Encoding" };
-        QuickAccessWindowInfoItem FilePathDisplay = new QuickAccessWindowInfoItem { Command = "File Path" };
-        QuickAccessWindowInfoItem FileNameDisplay = new QuickAccessWindowInfoItem { Command = "File Name" };
+        QuickAccessWindowInfoItem WordCountDisplay = new QuickAccessWindowInfoItem { Command = "单词数" };
+        QuickAccessWindowInfoItem CharacterCountDisplay = new QuickAccessWindowInfoItem { Command = "字符数" };
+        QuickAccessWindowInfoItem LineCountDisplay = new QuickAccessWindowInfoItem { Command = "行数" };
+        QuickAccessWindowInfoItem EncodingDisplay = new QuickAccessWindowInfoItem { Command = "当前编码" };
+        QuickAccessWindowInfoItem FilePathDisplay = new QuickAccessWindowInfoItem { Command = "文件路径" };
+        QuickAccessWindowInfoItem FileNameDisplay = new QuickAccessWindowInfoItem { Command = "文件名" };
         
         public QuickAccessWindow()
         {
@@ -125,7 +125,7 @@ namespace Fastedit.Controls
                     {
                         CurrentTabPages[i].Command = tab.DatabaseItem.FileName;
                         CurrentTabPages[i].Tag = tab;
-                        CurrentTabPages[i].Shortcut = "Open document";
+                        CurrentTabPages[i].Shortcut = "打开文档";
                     }
                     else
                     {
@@ -134,7 +134,7 @@ namespace Fastedit.Controls
                             {
                                 Command = tab.DatabaseItem.FileName,
                                 Tag = tab,
-                                Shortcut = "Open document"
+                                Shortcut = "打开文档"
                             });
                     }
                 }

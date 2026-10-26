@@ -57,7 +57,7 @@ public sealed partial class TextStatusBar : UserControl
     {
         foreach(var highlight in TextControlBox.SyntaxHighlightings)
         {
-            var item = new MenuFlyoutItem { Text = highlight.Value == null ? "None":highlight.Value.Name, Tag = highlight.Key.GetHashCode() };
+            var item = new MenuFlyoutItem { Text = highlight.Value == null ? "无":highlight.Value.Name, Tag = highlight.Key.GetHashCode() };
             item.Click += Syntaxhighlighting_Selected;
             SyntaxHighlightingsFlyout.Items.Add(item);
         }
@@ -204,7 +204,7 @@ public sealed partial class TextStatusBar : UserControl
             ItemSyntaxHighlightings.ChangingText = "-";
             return;
         }
-            ItemSyntaxHighlightings.ChangingText = tabPage.textbox.SyntaxHighlighting != null ? tabPage.textbox.SyntaxHighlighting.Name : "None";
+            ItemSyntaxHighlightings.ChangingText = tabPage.textbox.SyntaxHighlighting != null ? tabPage.textbox.SyntaxHighlighting.Name : "无";
     }
 
     public void UpdateAll()

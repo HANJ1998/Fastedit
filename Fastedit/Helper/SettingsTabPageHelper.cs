@@ -22,7 +22,7 @@ public class SettingsTabPageHelper
         if (settingsPage == null)
             settingsPage = new TabViewItem
             {
-                Header = "Settings",
+                Header = "设置",
                 IconSource = new SymbolIconSource { Symbol = Symbol.Setting },
                 Content = new SettingsPage(new SettingsNavigationParameter(mainPage, tabView, page)),
             };

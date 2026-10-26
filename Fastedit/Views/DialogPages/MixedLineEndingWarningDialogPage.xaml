@@ -10,8 +10,8 @@
 
     <StackPanel>
 
-        <TextBlock Text="This file contains a mix of different line endings."/>
-        <TextBlock FontWeight="Bold" Text="Please select one format to make them consistent."/>
+        <TextBlock Text="此文件包含多种不同的行尾符。"/>
+        <TextBlock FontWeight="Bold" Text="请选择一种格式以使其保持一致。"/>
         <ComboBox Margin="0,15,0,0" Width="150" ItemsSource="{x:Bind LineEndingStrings}" SelectedIndex="1" SelectionChanged="ComboBox_SelectionChanged" x:Name="lineEndingCombobox">
             <ComboBox.ItemTemplate>
                 <DataTemplate x:DataType="x:String">

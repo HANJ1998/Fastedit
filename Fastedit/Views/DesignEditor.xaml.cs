@@ -19,7 +19,7 @@ public sealed partial class DesignEditor : Page
         this.currentDesign = design;
         this.CurrentDesignName = designName;
 
-        this.titlebarHeader.Text = "Edit " + designName;
+        this.titlebarHeader.Text = "编辑 " + designName;
     }
     public string CurrentDesignName { get; private set; }
     public bool NeedSave { get; private set; } = false;

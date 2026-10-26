@@ -23,10 +23,10 @@ internal class RenameFileDialog
             Background = DialogHelper.ContentDialogBackground(),
             Foreground = DialogHelper.ContentDialogForeground(),
             RequestedTheme = DialogHelper.DialogDesign,
-            Title = "Rename " + tab.DatabaseItem.FileName,
+            Title = "重命名 " + tab.DatabaseItem.FileName,
             Content = renameTextbox,
             PrimaryButtonText = "Rename",
-            CloseButtonText = "Cancel",
+            CloseButtonText = "取消",
             DefaultButton = ContentDialogButton.Primary,
         };
 

@@ -53,10 +53,10 @@ public class FileConflictDialog
             });
             contentPanel.Children.Add(new TextBlock
             {
-                Text = "You also have unsaved modifications in Fastedit.\n\n" +
-                       "• Reload: Discard your local changes and load the disk version.\n" +
-                       "• Overwrite: Keep your local changes and overwrite the file on disk.\n" +
-                       "• Ignore: Keep your changes in the editor without modifying disk.",
+                Text = "你在 Fastedit 中还有未保存的修改。\n\n" +
+                       "• 重新加载：放弃本地更改并载入磁盘上的版本。\n" +
+                       "• 覆盖：保留本地更改并覆盖磁盘上的文件。\n" +
+                       "• 忽略：在编辑器中保留你的更改，不修改磁盘文件。",
                 TextWrapping = TextWrapping.Wrap
             });
 
@@ -68,9 +68,9 @@ public class FileConflictDialog
                 RequestedTheme = DialogHelper.DialogDesign,
                 Title = $"File Conflict - {fileName}",
                 Content = contentPanel,
-                PrimaryButtonText = "Reload from disk",
-                SecondaryButtonText = "Overwrite disk",
-                CloseButtonText = "Ignore",
+                PrimaryButtonText = "从磁盘重新加载",
+                SecondaryButtonText = "覆盖磁盘文件",
+                CloseButtonText = "忽略",
                 DefaultButton = ContentDialogButton.Primary
             };
 

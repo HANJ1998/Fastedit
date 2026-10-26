@@ -8,49 +8,49 @@
     mc:Ignorable="d" KeyDown="Page_KeyDown">
     <Page.Resources>
         <MenuFlyout x:Key="rightClickMenu" x:Name="RightClickMenu">
-            <MenuFlyoutItem Text="Copy" Click="Copy_Click" Icon="Copy"/>
-            <MenuFlyoutItem Text="Paste" Click="Paste_Click" Icon="Paste"/>
-            <MenuFlyoutItem Text="Cut" Click="Cut_Click" Icon="Cut"/>
+            <MenuFlyoutItem Text="复制" Click="Copy_Click" Icon="Copy"/>
+            <MenuFlyoutItem Text="粘贴" Click="Paste_Click" Icon="Paste"/>
+            <MenuFlyoutItem Text="剪切" Click="Cut_Click" Icon="Cut"/>
             <MenuFlyoutSeparator/>
-            <MenuFlyoutItem Text="Save" Click="Save_Click" Icon="Save">
+            <MenuFlyoutItem Text="保存" Click="Save_Click" Icon="Save">
                 <MenuFlyoutItem.KeyboardAccelerators>
                     <KeyboardAccelerator Key="S" Modifiers="Control" IsEnabled="False"/>
                 </MenuFlyoutItem.KeyboardAccelerators>
             </MenuFlyoutItem>
-            <MenuFlyoutItem Text="Save As" Click="SaveAs_Click" Icon="SaveLocal">
+            <MenuFlyoutItem Text="另存为" Click="SaveAs_Click" Icon="SaveLocal">
                 <MenuFlyoutItem.KeyboardAccelerators>
                     <KeyboardAccelerator Key="S" Modifiers="Control, Shift"  IsEnabled="False"/>
                 </MenuFlyoutItem.KeyboardAccelerators>
             </MenuFlyoutItem>
             <MenuFlyoutSeparator/>
-            <MenuFlyoutItem Text="Compact Overlay" Click="CompactOverlay_Click">
+            <MenuFlyoutItem Text="迷你模式" Click="CompactOverlay_Click">
                 <MenuFlyoutItem.KeyboardAccelerators>
                     <KeyboardAccelerator Key="K" Modifiers="Control" IsEnabled="False"/>
                 </MenuFlyoutItem.KeyboardAccelerators>
             </MenuFlyoutItem>
-            <MenuFlyoutItem Text="Fullscreen" Click="Fullscreen_Click" Icon="Fullscreen">
+            <MenuFlyoutItem Text="全屏" Click="Fullscreen_Click" Icon="Fullscreen">
                 <MenuFlyoutItem.KeyboardAccelerators>
                     <KeyboardAccelerator Key="F11"  IsEnabled="False"/>
                 </MenuFlyoutItem.KeyboardAccelerators>
             </MenuFlyoutItem>
-            <MenuFlyoutItem Text="Always On Top" Click="Toggle_TopMost_Click"/>
+            <MenuFlyoutItem Text="窗口置顶" Click="Toggle_TopMost_Click"/>
             <MenuFlyoutSeparator/>
-            <MenuFlyoutItem Text="Close" Icon="Cancel" Click="Close_Click">
+            <MenuFlyoutItem Text="关闭" Icon="Cancel" Click="Close_Click">
                 <MenuFlyoutItem.KeyboardAccelerators>
                     <KeyboardAccelerator Key="L" Modifiers="Control" IsEnabled="False"/>
                 </MenuFlyoutItem.KeyboardAccelerators>
             </MenuFlyoutItem>
-            <MenuFlyoutItem Text="Find" Click="OpenSearch_Click">
+            <MenuFlyoutItem Text="查找" Click="OpenSearch_Click">
                 <MenuFlyoutItem.KeyboardAccelerators>
                     <KeyboardAccelerator Key="F" Modifiers="Control" IsEnabled="False"/>
                 </MenuFlyoutItem.KeyboardAccelerators>
             </MenuFlyoutItem>
-            <MenuFlyoutItem Text="Replace" Click="OpenReplace_Click">
+            <MenuFlyoutItem Text="替换" Click="OpenReplace_Click">
                 <MenuFlyoutItem.KeyboardAccelerators>
                     <KeyboardAccelerator Key="R" Modifiers="Control" IsEnabled="False"/>
                 </MenuFlyoutItem.KeyboardAccelerators>
             </MenuFlyoutItem>
-            <ToggleMenuFlyoutItem x:Name="readonlyModeFlyoutItem" Text="ReadOnly" Click="ToggleReadOnlyMode_Click"/>
+            <ToggleMenuFlyoutItem x:Name="readonlyModeFlyoutItem" Text="只读" Click="ToggleReadOnlyMode_Click"/>
         </MenuFlyout>
     </Page.Resources>
 

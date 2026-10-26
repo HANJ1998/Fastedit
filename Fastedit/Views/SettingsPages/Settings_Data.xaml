@@ -10,26 +10,26 @@
 
     <StackPanel>
         <controls:SetingsItemSeparator x:Uid="Settings_Data_SetingsItemSeparator1"/>
-        <controls:SettingsControl x:Uid="Settings_Data_SettingsControl_ImportExportHeader" Header="Import / Export App Settings">
+        <controls:SettingsControl x:Uid="Settings_Data_SettingsControl_ImportExportHeader" Header="导入 / 导出应用设置">
             <controls:SettingsControl.Content>
                 <StackPanel Orientation="Horizontal">
-                    <Button x:Uid="Settings_Data_ExportSettingsButton" Content="Export Settings" Margin="5,0,0,0" Click="ExportSettingsButton_Click" />
-                    <Button x:Uid="Settings_Data_ImportSettingsButton" Content="Import Settings" Margin="5,0,0,0" Click="ImportSettingsButton_Click" />
+                    <Button x:Uid="Settings_Data_ExportSettingsButton" Content="导出设置" Margin="5,0,0,0" Click="ExportSettingsButton_Click" />
+                    <Button x:Uid="Settings_Data_ImportSettingsButton" Content="导入设置" Margin="5,0,0,0" Click="ImportSettingsButton_Click" />
                 </StackPanel>
             </controls:SettingsControl.Content>
         </controls:SettingsControl>
 
-        <controls:SetingsItemSeparator x:Uid="Settings_Data_SetingsItemSeparator2" Header="Clear Folders"/>
-        <controls:SettingsControl x:Uid="Settings_Data_ClearRecycleBinHeader" Header="Clear Recycle Bin">
+        <controls:SetingsItemSeparator x:Uid="Settings_Data_SetingsItemSeparator2" Header="清理文件夹"/>
+        <controls:SettingsControl x:Uid="Settings_Data_ClearRecycleBinHeader" Header="清空回收站">
             <controls:SettingsControl.Content>
                 <StackPanel Orientation="Horizontal">
                     <TextBlock x:Uid="Settings_Data_RecycleBinFileSize" FontSize="18" VerticalAlignment="Center" Margin="0,0,10,0" x:Name="recyclebinFilesizeDisplay"/>
-                    <Button x:Uid="Settings_Data_ClearRecycleBinButton" Width="120" Content="Clear" Style="{ThemeResource AccentButtonStyle}">
+                    <Button x:Uid="Settings_Data_ClearRecycleBinButton" Width="120" Content="清除" Style="{ThemeResource AccentButtonStyle}">
                         <Button.Flyout>
                             <Flyout>
                                 <StackPanel>
-                                    <TextBlock x:Uid="Settings_Data_FlyoutText" Style="{ThemeResource BaseTextBlockStyle}" Text="All items in the Recyclebin will be deleted" Margin="0,0,0,12" />
-                                    <Button x:Uid="Settings_Data_ClearRecycleBinConfirmButton" Style="{ThemeResource AccentButtonStyle}" Click="ClearRecyclebin_Click" Content="Clear" />
+                                    <TextBlock x:Uid="Settings_Data_FlyoutText" Style="{ThemeResource BaseTextBlockStyle}" Text="回收站中的所有项目都将被删除" Margin="0,0,0,12" />
+                                    <Button x:Uid="Settings_Data_ClearRecycleBinConfirmButton" Style="{ThemeResource AccentButtonStyle}" Click="ClearRecyclebin_Click" Content="清除" />
                                 </StackPanel>
                             </Flyout>
                         </Button.Flyout>
@@ -38,11 +38,11 @@
             </controls:SettingsControl.Content>
         </controls:SettingsControl>
 
-        <controls:SettingsControl x:Uid="Settings_Data_ClearTemporaryFilesHeader" Header="Clear Temporary Files">
+        <controls:SettingsControl x:Uid="Settings_Data_ClearTemporaryFilesHeader" Header="清除临时文件">
             <controls:SettingsControl.Content>
                 <StackPanel Orientation="Horizontal">
                     <TextBlock x:Uid="Settings_Data_TemporaryFileSize" FontSize="18" VerticalAlignment="Center" Margin="0,0,10,0" x:Name="temporaryFileSizeDisplay"/>
-                    <Button x:Uid="Settings_Data_ClearTemporaryFilesButton" Width="120" Style="{ThemeResource AccentButtonStyle}" Click="ClearTemporaryFiles_Click" Content="Clear"/>
+                    <Button x:Uid="Settings_Data_ClearTemporaryFilesButton" Width="120" Style="{ThemeResource AccentButtonStyle}" Click="ClearTemporaryFiles_Click" Content="清除"/>
                 </StackPanel>
             </controls:SettingsControl.Content>
         </controls:SettingsControl>
