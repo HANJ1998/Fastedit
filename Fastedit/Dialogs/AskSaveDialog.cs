@@ -18,9 +18,9 @@ public class AskSaveDialog
             RequestedTheme = DialogHelper.DialogDesign,
             Title = "Save File?",
             Content = "Would you like to save the file " + tab.DatabaseItem.FileName + "?",
-            PrimaryButtonText = "Save",
-            SecondaryButtonText = "Don't save",
-            CloseButtonText = "Cancel",
+            PrimaryButtonText = Multilingual.L("T_Save"),
+            SecondaryButtonText = Multilingual.L("T_DonTSave"),
+            CloseButtonText = Multilingual.L("T_Cancel"),
             DefaultButton = ContentDialogButton.Primary,
             XamlRoot = root ?? App.m_window.Content.XamlRoot,
         };

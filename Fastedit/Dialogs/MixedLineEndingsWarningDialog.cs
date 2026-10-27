@@ -18,7 +18,7 @@ internal class MixedLineEndingsWarningDialog
             Background = DialogHelper.ContentDialogBackground(),
             Foreground = DialogHelper.ContentDialogForeground(),
             RequestedTheme = DialogHelper.DialogDesign,
-            Title = "Warning",
+            Title = Multilingual.L("T_Warning"),
             Content = dialogPage,
             PrimaryButtonText = "Apply",
             CloseButtonText = "Cancel",

@@ -53,10 +53,10 @@ public class FileConflictDialog
             });
             contentPanel.Children.Add(new TextBlock
             {
-                Text = "You also have unsaved modifications in Fastedit.\n\n" +
-                       "• Reload: Discard your local changes and load the disk version.\n" +
-                       "• Overwrite: Keep your local changes and overwrite the file on disk.\n" +
-                       "• Ignore: Keep your changes in the editor without modifying disk.",
+                Text = Multilingual.L("T_YouAlsoHaveUnsavedModificationsInFasteditNN") +
+                       Multilingual.L("T_ReloadDiscardYourLocalChangesAndLoadTheDiskVersionN") +
+                       Multilingual.L("T_OverwriteKeepYourLocalChangesAndOverwriteTheFileOnDiskN") +
+                       Multilingual.L("T_IgnoreKeepYourChangesInTheEditorWithoutModifyingDisk"),
                 TextWrapping = TextWrapping.Wrap
             });
 

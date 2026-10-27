@@ -1,4 +1,4 @@
-using Fastedit.Core.Tab;
+﻿using Fastedit.Core.Tab;
 using Fastedit.Dialogs;
 using Fastedit.Helper;
 using Microsoft.UI.Xaml;
@@ -57,7 +57,7 @@ public sealed partial class TextStatusBar : UserControl
     {
         foreach(var highlight in TextControlBox.SyntaxHighlightings)
         {
-            var item = new MenuFlyoutItem { Text = highlight.Value == null ? "None":highlight.Value.Name, Tag = highlight.Key.GetHashCode() };
+            var item = new MenuFlyoutItem { Text = highlight.Value == null ? Multilingual.L("T_None"):highlight.Value.Name, Tag = highlight.Key.GetHashCode() };
             item.Click += Syntaxhighlighting_Selected;
             SyntaxHighlightingsFlyout.Items.Add(item);
         }
@@ -105,7 +105,7 @@ public sealed partial class TextStatusBar : UserControl
             return;
         }
 
-        ItemLineColumn.CustomText = $"Ln: {tabPage.textbox.CurrentLineIndex + 1}, Cl: {tabPage.textbox.CursorPosition.CharacterPosition}";
+        ItemLineColumn.CustomText = string.Format(Multilingual.L("T_LineColumnFormat"), tabPage.textbox.CurrentLineIndex + 1, tabPage.textbox.CursorPosition.CharacterPosition);
     }
 
     public void UpdateText()
@@ -119,7 +119,7 @@ public sealed partial class TextStatusBar : UserControl
             return;
         }
         int charCount = tabPage.textbox.CharacterCount();
-        ItemWordCharacter.CustomText = (charCount > 5_000_000 ? "" : $"W: {tabPage.textbox.WordCount()}, ") + $"C: {charCount}";
+        ItemWordCharacter.CustomText = (charCount > 5_000_000 ? "" : string.Format(Multilingual.L("T_WordsFormat"), tabPage.textbox.WordCount())) + string.Format(Multilingual.L("T_CharsFormat"), charCount);
     }
     public void UpdateZoom()
     {
@@ -188,9 +188,9 @@ public sealed partial class TextStatusBar : UserControl
 
         string content;
         if (tabPage.textbox.UseSpacesInsteadTabs)
-            content = $"Spaces: {tabPage.textbox.NumberOfSpacesForTab}";
+            content = string.Format(Multilingual.L("T_SpacesFormat"), tabPage.textbox.NumberOfSpacesForTab);
         else
-            content = $"Tabs";
+            content = Multilingual.L("T_TabsCharacter");
         ItemTabsSpaces.ChangingText = content;
     }
 
@@ -204,7 +204,7 @@ public sealed partial class TextStatusBar : UserControl
             ItemSyntaxHighlightings.ChangingText = "-";
             return;
         }
-            ItemSyntaxHighlightings.ChangingText = tabPage.textbox.SyntaxHighlighting != null ? tabPage.textbox.SyntaxHighlighting.Name : "None";
+            ItemSyntaxHighlightings.ChangingText = tabPage.textbox.SyntaxHighlighting != null ? tabPage.textbox.SyntaxHighlighting.Name : Multilingual.L("T_None");
     }
 
     public void UpdateAll()

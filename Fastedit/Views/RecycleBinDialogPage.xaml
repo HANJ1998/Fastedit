@@ -32,9 +32,9 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Button Grid.Column="0" HorizontalAlignment="Center" Content="Delete" Click="DeleteSelected_Click"/>
-            <Button Grid.Column="1" HorizontalAlignment="Center" Content="Open" Click="OpenSelected_Click"/>
-            <Button Grid.Column="2" HorizontalAlignment="Center" Content="Clear" Click="ClearRecycleBin_Click"/>
+            <Button Grid.Column="0" HorizontalAlignment="Center" x:Uid="RecycleBinDialogPage_Button_1" Content="Delete" Click="DeleteSelected_Click"/>
+            <Button Grid.Column="1" HorizontalAlignment="Center" x:Uid="RecycleBinDialogPage_Button_2" Content="Open" Click="OpenSelected_Click"/>
+            <Button Grid.Column="2" HorizontalAlignment="Center" x:Uid="RecycleBinDialogPage_Button_3" Content="Clear" Click="ClearRecycleBin_Click"/>
         </Grid>
     </Grid>
 </Page>

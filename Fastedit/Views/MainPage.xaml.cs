@@ -1,4 +1,4 @@
-using Fastedit.Controls;
+﻿using Fastedit.Controls;
 using Fastedit.Dialogs;
 using Fastedit.Helper;
 using Fastedit.Models;
@@ -97,7 +97,7 @@ public sealed partial class MainPage : Page
         else if (selectedTab is TabPageItem tab)
             title = $"{tab.Header}";
         else if (SettingsTabPageHelper.IsSettingsPage(tabControl.SelectedItem))
-            title = "Fastedit - Settings";
+            title = Multilingual.L("T_FasteditSettings_2");
         App.m_window.Title = title;
     }
     private void Initialise()
@@ -601,7 +601,7 @@ public sealed partial class MainPage : Page
         {
             var menuItem = new MenuFlyoutItem
             {
-                Text = item.Value == null ? "None" : item.Value.Name,
+                Text = item.Value == null ? Multilingual.L("T_None") : item.Value.Name,
                 Tag = item.Key.GetHashCode(),
             };
             menuItem.Click += SyntaxHighlighting_Click;
@@ -609,7 +609,7 @@ public sealed partial class MainPage : Page
 
             var runCommandWindowItem = new QuickAccessWindowItem
             {
-                Command = item.Value == null ? "None" : item.Value.Name,
+                Command = item.Value == null ? Multilingual.L("T_None") : item.Value.Name,
                 Tag = item.Key.GetHashCode(),
             };
             runCommandWindowItem.RunCommandWindowItemClicked += SyntaxHighlighting_Click;

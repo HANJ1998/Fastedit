@@ -99,7 +99,7 @@ public static class TabPageHelper
         if (!tab.DataIsLoaded && tab != null)
         {
             progressWindow?.ShowProgress();
-            progressWindow?.SetText("Loading file " + tab.DatabaseItem.FileName + "...");
+            progressWindow?.SetText(Multilingual.L("T_LoadingFile") + tab.DatabaseItem.FileName + "...");
             
             tab.textbox.LoadLines(TabDatabase.ReadTempFile(tab), true, tab.LineEnding);
             tab.SetTabsSpaces(tab.DatabaseItem.TabsSpaces);

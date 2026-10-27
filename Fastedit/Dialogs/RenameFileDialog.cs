@@ -23,7 +23,7 @@ internal class RenameFileDialog
             Background = DialogHelper.ContentDialogBackground(),
             Foreground = DialogHelper.ContentDialogForeground(),
             RequestedTheme = DialogHelper.DialogDesign,
-            Title = "Rename " + tab.DatabaseItem.FileName,
+            Title = Multilingual.L("T_Rename_2") + tab.DatabaseItem.FileName,
             Content = renameTextbox,
             PrimaryButtonText = "Rename",
             CloseButtonText = "Cancel",

@@ -27,9 +27,9 @@ internal class GoToLineDialog
             Background = DialogHelper.ContentDialogBackground(),
             Foreground = DialogHelper.ContentDialogForeground(),
             RequestedTheme = DialogHelper.DialogDesign,
-            Title = "Go To Line",
+            Title = Multilingual.L("T_GoToLine"),
             Content = input,
-            PrimaryButtonText = "Ok",
+            PrimaryButtonText = Multilingual.L("T_Ok"),
             CloseButtonText = "Cancel",
             DefaultButton = ContentDialogButton.Primary,
             XamlRoot = App.m_window.Content.XamlRoot

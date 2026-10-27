@@ -21,7 +21,7 @@ public class EncodingDialog
         {
             encodingCombobox = new ComboBox
             {
-                Header = "Encoding:",
+                Header = Multilingual.L("T_Encoding"),
                 HorizontalAlignment = Microsoft.UI.Xaml.HorizontalAlignment.Center,
                 VerticalAlignment = Microsoft.UI.Xaml.VerticalAlignment.Center,
                 Width=200,
@@ -39,7 +39,7 @@ public class EncodingDialog
             Content = encodingCombobox,
             PrimaryButtonText = "Done",
             SecondaryButtonText = tab.DatabaseItem.WasNeverSaved ? "" : "Reopen",
-            CloseButtonText = "Cancel",
+            CloseButtonText = Multilingual.L("T_Cancel"),
             DefaultButton = ContentDialogButton.Primary,
             XamlRoot = App.m_window.Content.XamlRoot
         };

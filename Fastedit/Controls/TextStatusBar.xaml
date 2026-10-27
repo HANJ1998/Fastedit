@@ -25,7 +25,7 @@
                 <Grid IsDoubleTapEnabled="True" DoubleTapped="ResetZoom_DoubleClicked">
                     <TextBlock>
                         <TextBlock.Inlines>
-                            <Run Text="Zoom"/>
+                            <Run x:Uid="TextStatusBar_Run_1" Text="Zoom"/>
                             <Bold>
                                 <Run Text="{x:Bind zoomSlider.Value, Mode=OneWay}"/>
                             </Bold>
@@ -39,7 +39,7 @@
         <controls:StatusbarItem Grid.Column="2" HorizontalAlignment="Left" StaticText="" x:Name="ItemWordCharacter"/>
         <controls:StatusbarItem Grid.Column="3" HorizontalAlignment="Right" StaticText="Ln: " x:Name="ItemLineColumn" FlyoutOpening="ItemLineColumn_FlyoutOpening">
             <controls:StatusbarItem.FlyoutContent>
-                <NumberBox Minimum="1" ValueChanged="GoToLineNumberBox_ValueChanged" Padding="5" Width="120" x:Name="GoToLineNumberBox" Header="Go To Line" PlaceholderText="Line..." KeyDown="GoToLineTextbox_KeyDown"/>
+                <NumberBox Minimum="1" ValueChanged="GoToLineNumberBox_ValueChanged" Padding="5" Width="120" x:Name="GoToLineNumberBox" x:Uid="TextStatusBar_NumberBox_1" Header="Go To Line" PlaceholderText="Line..." KeyDown="GoToLineTextbox_KeyDown"/>
             </controls:StatusbarItem.FlyoutContent>
         </controls:StatusbarItem>
         <controls:StatusbarItem Grid.Column="4" HorizontalAlignment="Left" StaticText="" x:Name="ItemEncoding">
@@ -65,24 +65,24 @@
             <controls:StatusbarItem.CustomFlyout>
                 <MenuFlyout Opening="ItemTabsSpaces_FlyoutOpening">
                     <!-- Tab key behavior -->
-                    <MenuFlyoutSubItem Text="Tab Key" x:Name="ItemTabKeyBehaviour">
+                    <MenuFlyoutSubItem x:Uid="TextStatusBar_MenuFlyoutSubItem_1" Text="Tab Key" x:Name="ItemTabKeyBehaviour">
                         <MenuFlyoutSubItem.Items>
-                            <ToggleMenuFlyoutItem Text="Use Tab (\t)" Click="TabSpaces_Click" Tag="-1"/>
+                            <ToggleMenuFlyoutItem x:Uid="TextStatusBar_ToggleMenuFlyoutItem_1" Text="Use Tab (\t)" Click="TabSpaces_Click" Tag="-1"/>
                             <MenuFlyoutSeparator/>
-                            <ToggleMenuFlyoutItem Text="2 Spaces" Click="TabSpaces_Click" Tag="2"/>
-                            <ToggleMenuFlyoutItem Text="4 Spaces" Click="TabSpaces_Click" Tag="4"/>
-                            <ToggleMenuFlyoutItem Text="8 Spaces" Click="TabSpaces_Click" Tag="8"/>
+                            <ToggleMenuFlyoutItem x:Uid="TextStatusBar_ToggleMenuFlyoutItem_2" Text="2 Spaces" Click="TabSpaces_Click" Tag="2"/>
+                            <ToggleMenuFlyoutItem x:Uid="TextStatusBar_ToggleMenuFlyoutItem_3" Text="4 Spaces" Click="TabSpaces_Click" Tag="4"/>
+                            <ToggleMenuFlyoutItem x:Uid="TextStatusBar_ToggleMenuFlyoutItem_4" Text="8 Spaces" Click="TabSpaces_Click" Tag="8"/>
                         </MenuFlyoutSubItem.Items>
                     </MenuFlyoutSubItem>
 
                     <!-- Reformat entire text -->
-                    <MenuFlyoutSubItem Text="Reformat Document">
+                    <MenuFlyoutSubItem x:Uid="TextStatusBar_MenuFlyoutSubItem_2" Text="Reformat Document">
                         <MenuFlyoutSubItem.Items>
-                            <MenuFlyoutItem Text="Use Tab (\t)" Click="ReformatTabsInDocument_Click" Tag="-1"/>
+                            <MenuFlyoutItem x:Uid="TextStatusBar_MenuFlyoutItem_1" Text="Use Tab (\t)" Click="ReformatTabsInDocument_Click" Tag="-1"/>
                             <MenuFlyoutSeparator/>
-                            <MenuFlyoutItem Text="2 Spaces" Click="ReformatTabsInDocument_Click" Tag="2"/>
-                            <MenuFlyoutItem Text="4 Spaces" Click="ReformatTabsInDocument_Click" Tag="4"/>
-                            <MenuFlyoutItem Text="8 Spaces" Click="ReformatTabsInDocument_Click" Tag="8"/>
+                            <MenuFlyoutItem x:Uid="TextStatusBar_MenuFlyoutItem_2" Text="2 Spaces" Click="ReformatTabsInDocument_Click" Tag="2"/>
+                            <MenuFlyoutItem x:Uid="TextStatusBar_MenuFlyoutItem_3" Text="4 Spaces" Click="ReformatTabsInDocument_Click" Tag="4"/>
+                            <MenuFlyoutItem x:Uid="TextStatusBar_MenuFlyoutItem_4" Text="8 Spaces" Click="ReformatTabsInDocument_Click" Tag="8"/>
                         </MenuFlyoutSubItem.Items>
                     </MenuFlyoutSubItem>
 

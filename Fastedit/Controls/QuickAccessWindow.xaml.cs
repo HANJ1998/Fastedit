@@ -17,12 +17,12 @@ namespace Fastedit.Controls
         List<QuickAccessWindowCustomItem> CurrentTabPages = new List<QuickAccessWindowCustomItem>();
         QuickAccessWindowSubItem currentPage = null;
 
-        QuickAccessWindowInfoItem WordCountDisplay = new QuickAccessWindowInfoItem { Command = "Number of Words" };
-        QuickAccessWindowInfoItem CharacterCountDisplay = new QuickAccessWindowInfoItem { Command = "Number of Character" };
-        QuickAccessWindowInfoItem LineCountDisplay = new QuickAccessWindowInfoItem { Command = "Number of Lines" };
-        QuickAccessWindowInfoItem EncodingDisplay = new QuickAccessWindowInfoItem { Command = "Current Encoding" };
-        QuickAccessWindowInfoItem FilePathDisplay = new QuickAccessWindowInfoItem { Command = "File Path" };
-        QuickAccessWindowInfoItem FileNameDisplay = new QuickAccessWindowInfoItem { Command = "File Name" };
+        QuickAccessWindowInfoItem WordCountDisplay = new QuickAccessWindowInfoItem { Command = Multilingual.L("T_NumberOfWords") };
+        QuickAccessWindowInfoItem CharacterCountDisplay = new QuickAccessWindowInfoItem { Command = Multilingual.L("T_NumberOfCharacter") };
+        QuickAccessWindowInfoItem LineCountDisplay = new QuickAccessWindowInfoItem { Command = Multilingual.L("T_NumberOfLines") };
+        QuickAccessWindowInfoItem EncodingDisplay = new QuickAccessWindowInfoItem { Command = Multilingual.L("T_CurrentEncoding") };
+        QuickAccessWindowInfoItem FilePathDisplay = new QuickAccessWindowInfoItem { Command = Multilingual.L("T_FilePath") };
+        QuickAccessWindowInfoItem FileNameDisplay = new QuickAccessWindowInfoItem { Command = Multilingual.L("T_FileName") };
         
         public QuickAccessWindow()
         {
@@ -125,7 +125,7 @@ namespace Fastedit.Controls
                     {
                         CurrentTabPages[i].Command = tab.DatabaseItem.FileName;
                         CurrentTabPages[i].Tag = tab;
-                        CurrentTabPages[i].Shortcut = "Open document";
+                        CurrentTabPages[i].Shortcut = Multilingual.L("T_OpenDocument");
                     }
                     else
                     {
@@ -134,7 +134,7 @@ namespace Fastedit.Controls
                             {
                                 Command = tab.DatabaseItem.FileName,
                                 Tag = tab,
-                                Shortcut = "Open document"
+                                Shortcut = Multilingual.L("T_OpenDocument")
                             });
                     }
                 }

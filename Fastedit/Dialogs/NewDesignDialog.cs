@@ -18,7 +18,7 @@ internal class NewDesignDialog
             Background = DialogHelper.ContentDialogBackground(),
             Foreground = DialogHelper.ContentDialogForeground(),
             RequestedTheme = DialogHelper.DialogDesign,
-            Title = "New Design",
+            Title = Multilingual.L("T_NewDesign"),
             Content = designName_Textbox,
             PrimaryButtonText = "Done",
             CloseButtonText = "Cancel",
